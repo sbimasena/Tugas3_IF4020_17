@@ -15,7 +15,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE: ghcr.io/indahtangdililing/kelompok17
+  IMAGE: ghcr.io/sbimasena/kelompok17
 
 jobs:
   build:
