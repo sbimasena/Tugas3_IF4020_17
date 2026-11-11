@@ -1,0 +1,1 @@
+{"valid":false,"status":"FORMAT_ERROR","message":"json: $: duplicate key \"schema\"","algorithm":null,"keyid":null,"package":null,"version":null}

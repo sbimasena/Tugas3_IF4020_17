@@ -1,0 +1,3281 @@
+[
+  {
+    "id": "setup-key-rsa-pss-sha256",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "rsa-pss-sha256",
+      "--out",
+      "test\\keys\\app-rsa-pss-sha256",
+      "--force"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-trust-rsa-pss-sha256",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-rsa-pss-sha256.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-sign-rsa-pss-sha256-text.txt",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\text.txt",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-rsa-pss-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\text.txt.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-rsa-pss-sha256-text.txt",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\text.txt",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\text.txt.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "rsa-pss-sha256",
+      "keyid": "d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-sign-rsa-pss-sha256-binary.bin",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-rsa-pss-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-rsa-pss-sha256-binary.bin",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "rsa-pss-sha256",
+      "keyid": "d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-sign-rsa-pss-sha256-empty.bin",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\empty.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-rsa-pss-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\empty.bin.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-rsa-pss-sha256-empty.bin",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\empty.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\empty.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "rsa-pss-sha256",
+      "keyid": "d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-U14-rsa-pss-sha256",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-rsa-pss-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\second.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U14-rsa-pss-sha256-first",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "rsa-pss-sha256",
+      "keyid": "d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U14-rsa-pss-sha256-second",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\second.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\rsa-pss-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "rsa-pss-sha256",
+      "keyid": "d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U14-rsa-pss-sha256-comparison",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": {
+      "same_manifest": true,
+      "identical_signature": false
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-key-ecdsa-p256-sha256",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "ecdsa-p256-sha256",
+      "--out",
+      "test\\keys\\app-ecdsa-p256-sha256",
+      "--force"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-trust-ecdsa-p256-sha256",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ecdsa-p256-sha256.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-sign-ecdsa-p256-sha256-text.txt",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\text.txt",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ecdsa-p256-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\text.txt.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-ecdsa-p256-sha256-text.txt",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\text.txt",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\text.txt.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ecdsa-p256-sha256",
+      "keyid": "d02076509fc7b613eefde3acb57d481cb9c2a6781c341939332c685085bbeec9",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-sign-ecdsa-p256-sha256-binary.bin",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ecdsa-p256-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-ecdsa-p256-sha256-binary.bin",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ecdsa-p256-sha256",
+      "keyid": "d02076509fc7b613eefde3acb57d481cb9c2a6781c341939332c685085bbeec9",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-sign-ecdsa-p256-sha256-empty.bin",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\empty.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ecdsa-p256-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\empty.bin.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-ecdsa-p256-sha256-empty.bin",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\empty.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\empty.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ecdsa-p256-sha256",
+      "keyid": "d02076509fc7b613eefde3acb57d481cb9c2a6781c341939332c685085bbeec9",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-U14-ecdsa-p256-sha256",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ecdsa-p256-sha256.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\second.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U14-ecdsa-p256-sha256-first",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ecdsa-p256-sha256",
+      "keyid": "d02076509fc7b613eefde3acb57d481cb9c2a6781c341939332c685085bbeec9",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U14-ecdsa-p256-sha256-second",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\second.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ecdsa-p256-sha256\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ecdsa-p256-sha256",
+      "keyid": "d02076509fc7b613eefde3acb57d481cb9c2a6781c341939332c685085bbeec9",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U14-ecdsa-p256-sha256-comparison",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": {
+      "same_manifest": true,
+      "identical_signature": false
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-key-ed25519",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "ed25519",
+      "--out",
+      "test\\keys\\app-ed25519",
+      "--force"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-trust-ed25519",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-sign-ed25519-text.txt",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\text.txt",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ed25519.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\text.txt.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-ed25519-text.txt",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\text.txt",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\text.txt.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-sign-ed25519-binary.bin",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ed25519.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-ed25519-binary.bin",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-sign-ed25519-empty.bin",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\empty.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ed25519.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\empty.bin.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U01-ed25519-empty.bin",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\empty.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\empty.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-U14-ed25519",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ed25519.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\second.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U14-ed25519-first",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U14-ed25519-second",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\second.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U14-ed25519-comparison",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": {
+      "same_manifest": true,
+      "identical_signature": true
+    },
+    "passed": true
+  },
+  {
+    "id": "U02",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U02\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U02\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U02\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "ARTIFACT_MISMATCH",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "ARTIFACT_MISMATCH",
+      "message": "artifact size or digest differs",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U03-add",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U03-add\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U03-add\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U03-add\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "ARTIFACT_MISMATCH",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "ARTIFACT_MISMATCH",
+      "message": "artifact size or digest differs",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U03-remove",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U03-remove\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U03-remove\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U03-remove\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "ARTIFACT_MISMATCH",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "ARTIFACT_MISMATCH",
+      "message": "artifact size or digest differs",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U04",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U04\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U04\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U04\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "INVALID_SIGNATURE",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "INVALID_SIGNATURE",
+      "message": "invalid signature",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "2"
+    },
+    "passed": true
+  },
+  {
+    "id": "U05",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U05\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U05\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U05\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "INVALID_SIGNATURE",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "INVALID_SIGNATURE",
+      "message": "invalid signature",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U06-empty",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U06-empty\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U06-empty\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U06-empty\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "KEY_NOT_TRUSTED",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "KEY_NOT_TRUSTED",
+      "message": "keyid not present in trust store",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U07",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U07\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U07\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U07\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "KEY_NOT_TRUSTED",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "KEY_NOT_TRUSTED",
+      "message": "key is not authorized for expected package and algorithm",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U08",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U08\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U08\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U08\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "2",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "METADATA_MISMATCH",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "METADATA_MISMATCH",
+      "message": "package, version, or artifact name differs",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U09",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U09\\renamed.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U09\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U09\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "METADATA_MISMATCH",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "METADATA_MISMATCH",
+      "message": "package, version, or artifact name differs",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-duplicate-bundle",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-bundle\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-bundle\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-bundle\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: duplicate key \"schema\"",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-duplicate-manifest",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-manifest\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-manifest\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-manifest\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: duplicate key \"version\"",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-duplicate-nested",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-nested\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-nested\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-duplicate-nested\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.artifact: duplicate key \"size\"",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-type",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-type\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-type\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-type\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.artifact.size: unexpected 256",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-boolean",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-boolean\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-boolean\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-boolean\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.artifact.size: unexpected true",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-null",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-null\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-null\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-null\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.version: null is not allowed",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-extra-field",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-extra-field\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-extra-field\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-extra-field\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: unknown field \"extra\"",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-missing-field",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-missing-field\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-missing-field\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-missing-field\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: missing field",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-base64-character",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-character\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-character\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-character\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "base64: invalid or non-canonical encoding",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-base64-padding",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-padding\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-padding\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-padding\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "base64: invalid or non-canonical encoding",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-base64-space",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-space\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-space\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-space\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "base64: invalid or non-canonical encoding",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-base64-pad-bits",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-pad-bits\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-pad-bits\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-base64-pad-bits\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "base64: invalid or non-canonical encoding",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-manifest-size",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-manifest-size\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-manifest-size\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-manifest-size\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "manifest exceeds 16 KiB",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-bundle-size",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-bundle-size\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-bundle-size\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-bundle-size\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "bundle exceeds 64 KiB",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-canonical-space",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-space\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-space\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-space\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "manifest: not in canonical form",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-canonical-order",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-order\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-order\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-order\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "manifest: not in canonical form",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-canonical-newline",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-newline\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-newline\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-newline\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "manifest: not in canonical form",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-canonical-exponent",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-exponent\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-exponent\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-canonical-exponent\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.artifact.size: unexpected 2.56e2",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-bom",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-bom\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-bom\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-bom\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: BOM or invalid UTF-8",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U10-trailing-json",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U10-trailing-json\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U10-trailing-json\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U10-trailing-json\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: trailing data",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "U11",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U11\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U11\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U11\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "UNSUPPORTED_ALGORITHM",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "UNSUPPORTED_ALGORITHM",
+      "message": "unsupported algorithm",
+      "algorithm": "unknown",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "setup-untrusted",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "ed25519",
+      "--out",
+      "test\\keys\\app-untrusted",
+      "--force"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "setup-U12",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-untrusted.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\untrusted.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U12",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\untrusted.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "KEY_NOT_TRUSTED",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "KEY_NOT_TRUSTED",
+      "message": "keyid not present in trust store",
+      "algorithm": "ed25519",
+      "keyid": "f19ae78b46d16a663ce6a0a68586eef463a247dab1949e8fb3a831ad8da83acf",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "U13",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\U13\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\U13\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\U13\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 0,
+    "expected_status": "OK",
+    "actual_exit": 0,
+    "actual": {
+      "valid": true,
+      "status": "OK",
+      "message": "release verified",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-duplicate-keyid",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-keyid\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-keyid\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-keyid\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "invalid or duplicate trust key",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-duplicate-package",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-package\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-package\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-package\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "invalid or duplicate package permission",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-empty-package",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-empty-package\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-empty-package\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-empty-package\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "empty package permissions",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-wildcard",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-wildcard\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-wildcard\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-wildcard\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "invalid or duplicate package permission",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-fingerprint",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-fingerprint\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-fingerprint\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-fingerprint\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "invalid public key or fingerprint",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-key-encoding",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-key-encoding\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-key-encoding\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-key-encoding\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "invalid public key or fingerprint",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-key-profile",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-key-profile\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-key-profile\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-key-profile\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "invalid public key or fingerprint",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-keys-null",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-keys-null\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-keys-null\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-keys-null\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.keys: null is not allowed",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-extra-field",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-extra-field\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-extra-field\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-extra-field\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: unknown field \"extra\"",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-missing-field",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-missing-field\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-missing-field\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-missing-field\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $.keys[0]: missing field",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-format-duplicate-field",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-field\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-field\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-format-duplicate-field\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: duplicate key \"schema\"",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-valid-different-profile",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-valid-different-profile\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-valid-different-profile\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\TRUST-valid-different-profile\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "KEY_NOT_TRUSTED",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "KEY_NOT_TRUSTED",
+      "message": "key is not authorized for expected package and algorithm",
+      "algorithm": "ed25519",
+      "keyid": "d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "SIGNATURE-length",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\SIGNATURE-length\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\SIGNATURE-length\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\SIGNATURE-length\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "INVALID_SIGNATURE",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "INVALID_SIGNATURE",
+      "message": "invalid signature",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "ORDER-trust-before-algorithm",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-trust-before-algorithm\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-trust-before-algorithm\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-trust-before-algorithm\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "FORMAT_ERROR",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "FORMAT_ERROR",
+      "message": "json: $: missing field",
+      "algorithm": "unknown",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "ORDER-algorithm-before-trust",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-algorithm-before-trust\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-algorithm-before-trust\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-algorithm-before-trust\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "UNSUPPORTED_ALGORITHM",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "UNSUPPORTED_ALGORITHM",
+      "message": "unsupported algorithm",
+      "algorithm": "unknown",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "ORDER-trust-before-signature",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-trust-before-signature\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-trust-before-signature\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-trust-before-signature\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "KEY_NOT_TRUSTED",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "KEY_NOT_TRUSTED",
+      "message": "keyid not present in trust store",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "ORDER-signature-before-metadata",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-signature-before-metadata\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-signature-before-metadata\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-signature-before-metadata\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "2",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "INVALID_SIGNATURE",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "INVALID_SIGNATURE",
+      "message": "invalid signature",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "ORDER-metadata-before-artifact",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-metadata-before-artifact\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-metadata-before-artifact\\bundle.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ORDER-metadata-before-artifact\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "2",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "METADATA_MISMATCH",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "METADATA_MISMATCH",
+      "message": "package, version, or artifact name differs",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "IO-missing-artifact",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\missing.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "open test\\results\\app-20261111-231250\\inputs\\missing.bin: The system cannot find the file specified.",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "IO-missing-bundle",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\missing.bin",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "open test\\results\\app-20261111-231250\\inputs\\missing.bin: The system cannot find the file specified.",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "IO-missing-trust",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\missing.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "open test\\results\\app-20261111-231250\\inputs\\missing.bin: The system cannot find the file specified.",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "ORDER-io-before-format",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\malformed.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\missing.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "open test\\results\\app-20261111-231250\\inputs\\missing.bin: The system cannot find the file specified.",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "CLI-help-root",
+    "command": [
+      "kelompok17",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-keygen",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-sign",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-verify",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-trust",
+    "command": [
+      "kelompok17",
+      "trust",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-trust-add",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-trust-list",
+    "command": [
+      "kelompok17",
+      "trust",
+      "list",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-help-trust-remove",
+    "command": [
+      "kelompok17",
+      "trust",
+      "remove",
+      "--help"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-version",
+    "command": [
+      "kelompok17",
+      "--version"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-missing",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "required flag(s) \"bundle\", \"file\", \"package\", \"trust-store\", \"version\" not set",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "CLI-unknown",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--unknown",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "unknown flag: --unknown",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "CLI-positional",
+    "command": [
+      "kelompok17",
+      "verify",
+      "extra",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "unknown command \"extra\" for \"kelompok17 verify\"",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "CLI-json-used-as-value",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "--json",
+      "--unknown"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-json-disabled",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--unknown",
+      "--json=false"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-unknown-command",
+    "command": [
+      "kelompok17",
+      "unknown"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-trust-no-command",
+    "command": [
+      "kelompok17",
+      "trust"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "CLI-verify-text",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "INPUT-invalid-package",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "bad package",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "invalid expected package or version",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "INPUT-invalid-version",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "bad version",
+      "--json"
+    ],
+    "expected_exit": 2,
+    "expected_status": "INPUT_ERROR",
+    "actual_exit": 2,
+    "actual": {
+      "valid": false,
+      "status": "INPUT_ERROR",
+      "message": "invalid expected package or version",
+      "algorithm": null,
+      "keyid": null,
+      "package": null,
+      "version": null
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-add",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-idempotent",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-idempotent-state",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": {
+      "schema": "minisign-trust/v1",
+      "keys": [
+        {
+          "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+          "algorithm": "ed25519",
+          "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAMd1Tf09j11UbsxoOH9ibu8/2CcX/BNDpCi5lueSQn0o=\n-----END PUBLIC KEY-----\n",
+          "packages": [
+            "demo"
+          ]
+        }
+      ]
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-update",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "other",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-update-state",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": {
+      "schema": "minisign-trust/v1",
+      "keys": [
+        {
+          "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+          "algorithm": "ed25519",
+          "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAMd1Tf09j11UbsxoOH9ibu8/2CcX/BNDpCi5lueSQn0o=\n-----END PUBLIC KEY-----\n",
+          "packages": [
+            "demo",
+            "other"
+          ]
+        }
+      ]
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-list",
+    "command": [
+      "kelompok17",
+      "trust",
+      "list",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-remove",
+    "command": [
+      "kelompok17",
+      "trust",
+      "remove",
+      "--keyid",
+      "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "U06-removed",
+    "command": [
+      "kelompok17",
+      "verify",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--bundle",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json",
+      "--trust-store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--json"
+    ],
+    "expected_exit": 1,
+    "expected_status": "KEY_NOT_TRUSTED",
+    "actual_exit": 1,
+    "actual": {
+      "valid": false,
+      "status": "KEY_NOT_TRUSTED",
+      "message": "keyid not present in trust store",
+      "algorithm": "ed25519",
+      "keyid": "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "package": "demo",
+      "version": "1"
+    },
+    "passed": true
+  },
+  {
+    "id": "TRUST-remove-missing",
+    "command": [
+      "kelompok17",
+      "trust",
+      "remove",
+      "--keyid",
+      "9ac3ede036312bd92c657c9a7593e0494c172e6456732a0067d74f996cd6aec1",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\managed-trust.json"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-atomic-rename-failure",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "other",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\locked-trust.json"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-atomic-original-preserved",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": "previous store unchanged after rename failure",
+    "passed": true
+  },
+  {
+    "id": "TRUST-preserve-invalid",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\invalid-store.json"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "TRUST-preserve-invalid-state",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": "store unchanged",
+    "passed": true
+  },
+  {
+    "id": "TRUST-write-failure",
+    "command": [
+      "kelompok17",
+      "trust",
+      "add",
+      "--key",
+      "test\\keys\\app-ed25519.pub.pem",
+      "--package",
+      "demo",
+      "--store",
+      "test\\results\\app-20261111-231250\\inputs\\store-directory"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "KEYGEN-no-overwrite",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "ed25519",
+      "--out",
+      "test\\keys\\app-ed25519"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "KEYGEN-preserved",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": "private key unchanged",
+    "passed": true
+  },
+  {
+    "id": "KEYGEN-force-first",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "ed25519",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\force-key"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "KEYGEN-force-replace",
+    "command": [
+      "kelompok17",
+      "keygen",
+      "--algorithm",
+      "ed25519",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\force-key",
+      "--force"
+    ],
+    "expected_exit": 0,
+    "expected_status": null,
+    "actual_exit": 0,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "KEYGEN-force-changed",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": "new key pair",
+    "passed": true
+  },
+  {
+    "id": "SIGN-no-overwrite",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ed25519.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin.json"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "SIGN-input-overlap",
+    "command": [
+      "kelompok17",
+      "sign",
+      "--file",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin",
+      "--package",
+      "demo",
+      "--version",
+      "1",
+      "--key",
+      "test\\keys\\app-ed25519.key.pem",
+      "--out",
+      "test\\results\\app-20261111-231250\\inputs\\ed25519\\binary.bin"
+    ],
+    "expected_exit": 2,
+    "expected_status": null,
+    "actual_exit": 2,
+    "actual": null,
+    "passed": true
+  },
+  {
+    "id": "SIGN-artifact-preserved",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": "artifact unchanged",
+    "passed": true
+  },
+  {
+    "id": "IO-temporary-cleanup",
+    "expected_exit": null,
+    "expected_status": null,
+    "actual_exit": null,
+    "actual": "no leftover temporary files",
+    "passed": true
+  }
+]

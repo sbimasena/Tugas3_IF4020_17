@@ -1,0 +1,8 @@
+list trusted keys and package permissions
+
+Usage:
+  kelompok17 trust list [flags]
+
+Flags:
+  -h, --help           help for list
+      --store string   trust store path

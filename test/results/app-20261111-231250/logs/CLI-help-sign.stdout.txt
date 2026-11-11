@@ -1,0 +1,12 @@
+sign a release artifact
+
+Usage:
+  kelompok17 sign [flags]
+
+Flags:
+      --file string      artifact path
+  -h, --help             help for sign
+      --key string       PKCS#8 private PEM path
+      --out string       bundle output path
+      --package string   release package
+      --version string   release version

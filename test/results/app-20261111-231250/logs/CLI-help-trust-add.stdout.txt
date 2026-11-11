@@ -1,0 +1,10 @@
+authorize a public key for a package
+
+Usage:
+  kelompok17 trust add [flags]
+
+Flags:
+  -h, --help             help for add
+      --key string       SPKI public PEM path
+      --package string   authorized package
+      --store string     trust store path

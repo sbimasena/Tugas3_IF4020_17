@@ -1,0 +1,1 @@
+FORMAT_ERROR: invalid public key or fingerprint

@@ -1,0 +1,1 @@
+{"valid":false,"status":"INPUT_ERROR","message":"unknown command \"extra\" for \"kelompok17 verify\"","algorithm":null,"keyid":null,"package":null,"version":null}

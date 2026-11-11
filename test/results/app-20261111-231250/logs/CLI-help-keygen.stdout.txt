@@ -1,0 +1,10 @@
+generate a signing key pair
+
+Usage:
+  kelompok17 keygen [flags]
+
+Flags:
+      --algorithm string   rsa-pss-sha256, ecdsa-p256-sha256, or ed25519
+      --force              allow overwriting existing key files
+  -h, --help               help for keygen
+      --out string         key output prefix

@@ -1,0 +1,45 @@
+{
+  "utc": "2026-11-11T16:13:48.778899+00:00",
+  "revision": "not recorded",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.2",
+  "go": "go version go1.23.3 windows/amd64",
+  "total": 134,
+  "passed": 134,
+  "failed": [],
+  "u14": [
+    {
+      "id": "U14-rsa-pss-sha256-comparison",
+      "expected_exit": null,
+      "expected_status": null,
+      "actual_exit": null,
+      "actual": {
+        "same_manifest": true,
+        "identical_signature": false
+      },
+      "passed": true
+    },
+    {
+      "id": "U14-ecdsa-p256-sha256-comparison",
+      "expected_exit": null,
+      "expected_status": null,
+      "actual_exit": null,
+      "actual": {
+        "same_manifest": true,
+        "identical_signature": false
+      },
+      "passed": true
+    },
+    {
+      "id": "U14-ed25519-comparison",
+      "expected_exit": null,
+      "expected_status": null,
+      "actual_exit": null,
+      "actual": {
+        "same_manifest": true,
+        "identical_signature": true
+      },
+      "passed": true
+    }
+  ]
+}

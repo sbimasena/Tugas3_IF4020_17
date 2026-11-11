@@ -1,0 +1,1 @@
+INPUT_ERROR: required flag(s) "bundle", "file", "package", "trust-store", "version" not set

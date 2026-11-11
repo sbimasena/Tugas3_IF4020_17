@@ -1,0 +1,13 @@
+verify a release artifact
+
+Usage:
+  kelompok17 verify [flags]
+
+Flags:
+      --bundle string        bundle path
+      --file string          artifact path
+  -h, --help                 help for verify
+      --json                 write verification JSON to stdout
+      --package string       expected package
+      --trust-store string   trusted store path
+      --version string       expected version

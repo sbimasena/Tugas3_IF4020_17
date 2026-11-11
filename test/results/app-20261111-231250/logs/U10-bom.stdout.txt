@@ -1,0 +1,1 @@
+{"valid":false,"status":"FORMAT_ERROR","message":"json: BOM or invalid UTF-8","algorithm":null,"keyid":null,"package":null,"version":null}

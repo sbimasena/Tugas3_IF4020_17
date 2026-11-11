@@ -1,0 +1,15 @@
+manage trusted public keys
+
+Usage:
+  kelompok17 trust [flags]
+  kelompok17 trust [command]
+
+Available Commands:
+  add         authorize a public key for a package
+  list        list trusted keys and package permissions
+  remove      remove a trusted key
+
+Flags:
+  -h, --help   help for trust
+
+Use "kelompok17 trust [command] --help" for more information about a command.

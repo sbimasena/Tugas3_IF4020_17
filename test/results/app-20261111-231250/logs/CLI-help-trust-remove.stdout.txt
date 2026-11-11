@@ -1,0 +1,9 @@
+remove a trusted key
+
+Usage:
+  kelompok17 trust remove [flags]
+
+Flags:
+  -h, --help           help for remove
+      --keyid string   key fingerprint to remove
+      --store string   trust store path

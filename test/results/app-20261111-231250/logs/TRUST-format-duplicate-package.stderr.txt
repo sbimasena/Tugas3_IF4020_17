@@ -1,0 +1,1 @@
+FORMAT_ERROR: invalid or duplicate package permission

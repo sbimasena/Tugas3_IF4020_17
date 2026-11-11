@@ -1,0 +1,1 @@
+{"valid":false,"status":"KEY_NOT_TRUSTED","message":"keyid not present in trust store","algorithm":"ed25519","keyid":"f19ae78b46d16a663ce6a0a68586eef463a247dab1949e8fb3a831ad8da83acf","package":"demo","version":"1"}

@@ -1,0 +1,1 @@
+{"valid":false,"status":"KEY_NOT_TRUSTED","message":"key is not authorized for expected package and algorithm","algorithm":"ed25519","keyid":"d8fbd4d28da76843a2bc70be1b6460b33ea87f8e02ee79802bc0f2d7f3e4801f","package":"demo","version":"1"}

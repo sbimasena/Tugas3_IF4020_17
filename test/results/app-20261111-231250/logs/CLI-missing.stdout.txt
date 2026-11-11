@@ -1,0 +1,1 @@
+{"valid":false,"status":"INPUT_ERROR","message":"required flag(s) \"bundle\", \"file\", \"package\", \"trust-store\", \"version\" not set","algorithm":null,"keyid":null,"package":null,"version":null}
