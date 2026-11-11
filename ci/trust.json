@@ -1,0 +1,29 @@
+{
+  "schema": "minisign-trust/v1",
+  "keys": [
+    {
+      "keyid": "60c64a7cca9be9524c12cf1c1483e82b353917156c1990d319663f26238dddc9",
+      "algorithm": "ed25519",
+      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAJKLaecCngg1wl71Zcz8rtLZipnnA6cfSoagELmMg8gM=\n-----END PUBLIC KEY-----\n",
+      "packages": [
+        "kelompok17-demo"
+      ]
+    },
+    {
+      "keyid": "1b8adff1fb9ff273652e54f50b5ee8776ebd8d93705534e6226a23af5d327419",
+      "algorithm": "ecdsa-p256-sha256",
+      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYhoF16n2naP6JVf5g32tKAikFmmQ\nQXJeBnDVSV00r8I84fa1lPP0wVVKzU4jalbuW8GB7Azz8AJ9te5+n/CsKQ==\n-----END PUBLIC KEY-----\n",
+      "packages": [
+        "kelompok17-demo"
+      ]
+    },
+    {
+      "keyid": "c1536c8f45850b09de03752139491c36fefc1d9903047bd6e9d73c90527b5c85",
+      "algorithm": "rsa-pss-sha256",
+      "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA0GI/IftuAAzLQprMwoxW\n3EmXG0SS0cJGB9JG5hMVLugODXJKqinzjjcY8Mu9nevYBkWnH7H+2M+v5LGE60+X\nrjIefrlEl12ClWk6o8CgND0zJ55S2LYTZ3ab9BhQbYL5akQvjPUxGxoV5qyPoBmw\n3xpUI/mi3bHBws/F9CO06SeuZcWfleauJawIV++zk7q4GQZO1GZHsFKSwo31INMC\nV2oIDbfaV3RZNZidAHiMscAm5Ni2WekH8TwO9u1gD3/55em+OUKZhMReOJW9zCfG\nhwhTErd+bEce/vO2NOlkJNxbP6JY2yYVNIP3ZkocR2QfjEbTmTnk31ZTbLxXWytw\nqI0o4+IPzz14X+LfWVMz/01LBHNWQ6O3crnPLNgkbwM9IVBNMlgdskURyPqrU5Ru\ntG416joAA9GBMEzIiHiAxX8C71SA8b15HEJ/Z1vKHiyJdeF/Qga2FJmOwwTwmqnO\njl15PZlvm1zHtfDa3NXbODkx++lUY31YqQsaehCKO4JbAgMBAAE=\n-----END PUBLIC KEY-----\n",
+      "packages": [
+        "kelompok17-demo"
+      ]
+    }
+  ]
+}
