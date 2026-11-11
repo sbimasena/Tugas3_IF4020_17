@@ -1,0 +1,107 @@
+name: scenarios
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  IMAGE: ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a
+  PACKAGE: kelompok17-demo
+  VERSION: 1.0.0
+
+jobs:
+  scenario:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: c02 # satu byte artefact diubah
+            file: app.tar.gz
+            trust: /trust/trust.json
+          - id: c03 # trust store kosong
+            file: app.tar.gz
+            trust: /work/empty-trust.json
+          - id: c04 # artefact path gaada
+            file: missing.tar.gz
+            trust: /trust/trust.json
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pull image
+        run: docker pull "$IMAGE"
+
+      - name: Build artifact
+        run: |
+          mkdir -p work out
+          tar czf work/app.tar.gz cmd internal go.mod go.sum
+
+      - name: Sign
+        env:
+          KEY: ${{ secrets.CI_KEY_ED25519 }}
+        run: |
+          umask 077
+          printf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"
+          docker run --rm --network none --user "$(id -u):$(id -g)" \
+            -v "$PWD/work:/work" \
+            -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \
+            "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \
+            --key /keys/signing.key.pem --out app.bundle.json
+          rm -f "$RUNNER_TEMP/signing.key.pem"
+
+      - name: Tamper one byte (C02)
+        if: matrix.id == 'c02'
+        run: |
+          # Flip one byte in place; size and name stay the same.
+          byte=$(dd if=work/app.tar.gz bs=1 skip=100 count=1 2>/dev/null | od -An -tu1 | tr -d ' ')
+          printf "\\$(printf '%03o' $(( byte ^ 1 )))" | dd of=work/app.tar.gz bs=1 seek=100 conv=notrunc 2>/dev/null
+          ls -l work/app.tar.gz
+
+      - name: Empty trust store (C03)
+        if: matrix.id == 'c03'
+        run: echo '{"schema":"minisign-trust/v1","keys":[]}' > work/empty-trust.json
+
+      - name: Verify (expected to fail)
+        run: |
+          docker run --rm --network none --user "$(id -u):$(id -g)" \
+            -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \
+            "$IMAGE" verify --file "${{ matrix.file }}" --bundle app.bundle.json \
+            --trust-store "${{ matrix.trust }}" --package "$PACKAGE" --version "$VERSION" \
+            --json > out/verify.json
+
+      - name: Deploy (simulated)
+        run: |
+          echo "deployed $PACKAGE $VERSION" > out/DEPLOYED
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.id }}
+          path: out/
+
+  check:
+    needs: scenario
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download evidence
+        uses: actions/download-artifact@v4
+
+      - name: Assert statuses and missing deploy markers
+        env:
+          RESULT: ${{ needs.scenario.result }}
+        run: |
+          set -eu
+          test "$RESULT" = failure
+          for pair in c02:ARTIFACT_MISMATCH c03:KEY_NOT_TRUSTED c04:INPUT_ERROR; do
+            id=${pair%%:*}; want=${pair#*:}
+            got=$(jq -r .status "$id/verify.json")
+            echo "$id: status=$got (want $want)"
+            test "$got" = "$want"
+            if [ -e "$id/DEPLOYED" ]; then echo "$id: deploy marker exists"; exit 1; fi
+            echo "$id: no deploy marker"
+          done

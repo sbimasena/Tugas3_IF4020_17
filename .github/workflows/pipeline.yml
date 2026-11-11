@@ -1,0 +1,80 @@
+name: pipeline
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  IMAGE: ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a
+  PACKAGE: kelompok17-demo
+  VERSION: 1.0.0
+
+jobs:
+  c01:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - algo: ed25519
+            secret: CI_KEY_ED25519
+          - algo: ecdsa-p256-sha256
+            secret: CI_KEY_ECDSA
+          - algo: rsa-pss-sha256
+            secret: CI_KEY_RSA
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pull image
+        run: docker pull "$IMAGE"
+
+      - name: Runner identity (C05)
+        run: |
+          echo "uid:gid = $(id -u):$(id -g)"
+          if [ -t 0 ]; then echo "stdin is a TTY"; else echo "no TTY"; fi
+
+      - name: Build artifact
+        run: |
+          mkdir -p work out
+          tar czf work/app.tar.gz cmd internal go.mod go.sum
+          ls -l work
+
+      - name: Sign
+        env:
+          KEY: ${{ secrets[matrix.secret] }}
+        run: |
+          umask 077
+          printf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"
+          docker run --rm --network none --user "$(id -u):$(id -g)" \
+            -v "$PWD/work:/work" \
+            -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \
+            "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \
+            --key /keys/signing.key.pem --out app.bundle.json
+          rm -f "$RUNNER_TEMP/signing.key.pem"
+
+      - name: Verify
+        run: |
+          docker run --rm --network none --user "$(id -u):$(id -g)" \
+            -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \
+            "$IMAGE" verify --file app.tar.gz --bundle app.bundle.json \
+            --trust-store /trust/trust.json --package "$PACKAGE" --version "$VERSION" \
+            --json > out/verify.json
+          cat out/verify.json
+
+      - name: Deploy (simulated)
+        run: |
+          echo "deployed $PACKAGE $VERSION (${{ matrix.algo }})" > out/DEPLOYED
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c01-${{ matrix.algo }}
+          path: |
+            out/
+            work/app.bundle.json
