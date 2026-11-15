@@ -1,3 +1,4 @@
+// Package manifest berisi validasi, pembuatan, dan parsing manifest canonical
 package manifest
 
 import (
@@ -20,6 +21,8 @@ var (
 
 var escaper = strings.NewReplacer(`\`, `\\`, `"`, `\"`, "\b", `\b`, "\f", `\f`, "\n", `\n`, "\r", `\r`, "\t", `\t`)
 
+// Validate mengecek semua field m sesuai aturan di contract.Manifest.
+// Nilai Algorithm tidak dicek, hanya dipastikan bisa di-escape.
 func Validate(m contract.Manifest) error {
 	if m.Schema != contract.ManifestSchema || !packageRE.MatchString(m.Package) ||
 		!versionRE.MatchString(m.Version) || !hex64RE.MatchString(m.KeyID) ||
@@ -33,6 +36,9 @@ func Validate(m contract.Manifest) error {
 	return nil
 }
 
+// Canonical mengubah m ke JSON satu baris tanpa spasi dengan urutan field
+// schema, package, version, algorithm, keyid, artifact (name, size, sha256).
+// Gagal kalau m tidak valid atau hasilnya lebih dari 16 KiB.
 func Canonical(m contract.Manifest) ([]byte, error) {
 	if err := Validate(m); err != nil {
 		return nil, err
@@ -45,6 +51,9 @@ func Canonical(m contract.Manifest) ([]byte, error) {
 	return out, nil
 }
 
+// Parse mem-parse data lalu membandingkannya byte per byte dengan hasil Canonical.
+// Gagal kalau data lebih dari 16 KiB, JSON-nya ditolak strictjson, ada field
+// yang tidak valid, atau data tidak canonical.
 func Parse(data []byte) (contract.Manifest, error) {
 	var m contract.Manifest
 	if len(data) > contract.MaxManifest {

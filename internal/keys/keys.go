@@ -1,3 +1,4 @@
+// Package keys berisi fungsi untuk membaca dan menulis kunci PEM serta menghitung keyid
 package keys
 
 import (
@@ -24,6 +25,8 @@ func decodePEM(data []byte, label string) ([]byte, error) {
 	return block.Bytes, nil
 }
 
+// KeyID menghitung SHA-256 dari DER SPKI kunci publik dan mengembalikannya dalam
+// 64 karakter hex huruf kecil
 func KeyID(pub crypto.PublicKey) (string, error) {
 	der, err := x509.MarshalPKIXPublicKey(pub)
 	sum := sha256.Sum256(der)
@@ -39,6 +42,9 @@ func identify(pub crypto.PublicKey) (string, string, error) {
 	return p.Name(), id, err
 }
 
+// LoadPublic membaca kunci publik PEM "PUBLIC KEY" (SPKI), lalu mengembalikan kunci,
+// nama profil (misalnya "ed25519"), dan keyid. data harus berisi tepat satu blok PEM
+// tanpa header. Gagal kalau PEM tidak valid atau kuncinya tidak cocok dengan profil mana pun.
 func LoadPublic(data []byte) (crypto.PublicKey, string, string, error) {
 	der, err := decodePEM(data, "PUBLIC KEY")
 	if err != nil {
@@ -52,6 +58,8 @@ func LoadPublic(data []byte) (crypto.PublicKey, string, string, error) {
 	return pub, name, id, err
 }
 
+// LoadPrivate sama seperti LoadPublic, tapi untuk kunci privat PEM "PRIVATE KEY"
+// (PKCS#8). Nama profil dan keyid diambil dari kunci publiknya.
 func LoadPrivate(data []byte) (crypto.PrivateKey, string, string, error) {
 	der, err := decodePEM(data, "PRIVATE KEY")
 	if err != nil {
@@ -69,6 +77,8 @@ func LoadPrivate(data []byte) (crypto.PrivateKey, string, string, error) {
 	return priv, name, id, err
 }
 
+// Encode mengubah kunci privat ke PEM "PRIVATE KEY" (PKCS#8) dan kunci publiknya
+// ke PEM "PUBLIC KEY" (SPKI)
 func Encode(priv crypto.Signer) (privPEM, pubPEM []byte, err error) {
 	privDER, err := x509.MarshalPKCS8PrivateKey(priv)
 	if err != nil {

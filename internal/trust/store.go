@@ -1,3 +1,4 @@
+// Package trust berisi fungsi untuk membaca, mengecek, dan menyimpan trust store
 package trust
 
 import (
@@ -11,9 +12,15 @@ import (
 	"kelompok17/internal/contract"
 )
 
+// PackagePattern adalah regex untuk nama paket
 var PackagePattern = regexp.MustCompile(`^[a-z0-9][a-z0-9._-]{0,63}$`)
+
+// KeyIDPattern adalah regex untuk keyid (64 karakter hex huruf kecil)
 var KeyIDPattern = regexp.MustCompile(`^[0-9a-f]{64}$`)
 
+// Parse mem-parse trust store dengan core.StrictJSON lalu mengecek setiap entry:
+// keyid tidak dobel, algorithm didukung, PEM cocok dengan algorithm dan keyid,
+// dan daftar paket tidak kosong serta tidak dobel
 func Parse(data []byte, core contract.Core) (contract.Store, error) {
 	var store contract.Store
 	if err := core.StrictJSON(data, &store); err != nil {
@@ -46,6 +53,8 @@ func Parse(data []byte, core contract.Core) (contract.Store, error) {
 	return store, nil
 }
 
+// Load membaca file di path lalu memanggil Parse. Kalau create true dan file
+// belum ada, Load mengembalikan store kosong.
 func Load(path string, core contract.Core, create bool) (contract.Store, error) {
 	data, err := os.ReadFile(path)
 	if create && os.IsNotExist(err) {
@@ -57,6 +66,8 @@ func Load(path string, core contract.Core, create bool) (contract.Store, error) 
 	return Parse(data, core)
 }
 
+// Save menyimpan store ke path sebagai JSON dengan mode 0600. File ditulis ke
+// file sementara dulu lalu di-rename.
 func Save(path string, store contract.Store) error {
 	data, err := json.MarshalIndent(store, "", "  ")
 	if err != nil {
@@ -83,6 +94,8 @@ func Save(path string, store contract.Store) error {
 	return os.Rename(file.Name(), path)
 }
 
+// Add memberi kunci izin untuk paket name. Kalau keyid sudah ada di store,
+// name ditambahkan ke Packages entry tersebut.
 func Add(store *contract.Store, entry contract.Entry, name string) {
 	for i := range store.Keys {
 		if store.Keys[i].KeyID == entry.KeyID {
@@ -96,6 +109,7 @@ func Add(store *contract.Store, entry contract.Entry, name string) {
 	store.Keys = append(store.Keys, entry)
 }
 
+// Remove menghapus kunci dengan keyid dari store. Gagal kalau keyid tidak ada.
 func Remove(store *contract.Store, keyid string) error {
 	for i, entry := range store.Keys {
 		if entry.KeyID == keyid {

@@ -12,10 +12,18 @@ import (
 	"kelompok17/internal/trust"
 )
 
+// VerifyOptions berisi opsi untuk Verify
+//
+//   - File: file artifact
+//   - Bundle: file bundle dari Sign
+//   - TrustStore: file trust store
+//   - Package, Version: harus sama dengan isi manifest
 type VerifyOptions struct {
 	File, Bundle, TrustStore, Package, Version string
 }
 
+// Result adalah hasil Verify. Dengan verify --json, struct ini dicetak sebagai JSON.
+// Algorithm, KeyID, Package, dan Version masih nil kalau manifest gagal di-parse.
 type Result struct {
 	Valid     bool    `json:"valid"`
 	Status    string  `json:"status"`
@@ -36,6 +44,10 @@ func hashArtifact(file *os.File) (int64, string, error) {
 	return size, hex.EncodeToString(hash.Sum(nil)), err
 }
 
+// Verify mengecek artifact dengan bundle dan trust store. Hasilnya berupa Result dan
+// exit code: 0 untuk OK, 2 untuk INPUT_ERROR, dan 1 untuk FORMAT_ERROR,
+// UNSUPPORTED_ALGORITHM, KEY_NOT_TRUSTED, INVALID_SIGNATURE, METADATA_MISMATCH,
+// atau ARTIFACT_MISMATCH. Signature dicek dulu sebelum metadata dan isi artifact.
 func Verify(core contract.Core, options VerifyOptions) (Result, int) {
 	result := Result{}
 	fail := func(status string, err any) (Result, int) {

@@ -8,6 +8,9 @@ import (
 	"kelompok17/internal/contract"
 )
 
+// Keygen membuat pasangan kunci baru lalu menyimpannya ke <Out>.key.pem (0600)
+// dan <Out>.pub.pem (0644). Kalau salah satu file sudah ada, Keygen gagal kecuali
+// Force diisi. Dengan Force, kalau penulisan gagal di tengah, file lama dikembalikan.
 func (service Service) Keygen(options KeygenOptions) (KeyInfo, error) {
 	if !contract.Supported(options.Algorithm) || options.Out == "" {
 		return KeyInfo{}, fmt.Errorf("invalid algorithm or output prefix")

@@ -1,3 +1,4 @@
+// Package strictjson berisi parser JSON yang lebih ketat dari encoding/json
 package strictjson
 
 import (
@@ -10,6 +11,9 @@ import (
 	"unicode/utf8"
 )
 
+// Unmarshal mengisi target (pointer ke struct) dari data. Gagal kalau ada BOM,
+// UTF-8 tidak valid, key dobel, field tidak dikenal atau kurang, null, tipe tidak
+// cocok, angka pecahan atau eksponen, atau ada data lain setelah objek.
 func Unmarshal(data []byte, target any) error {
 	if bytes.HasPrefix(data, []byte("\xEF\xBB\xBF")) || !utf8.Valid(data) {
 		return fmt.Errorf("json: BOM or invalid UTF-8")

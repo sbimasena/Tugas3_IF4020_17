@@ -8,6 +8,8 @@ import (
 	"kelompok17/internal/trust"
 )
 
+// TrustAdd memasukkan kunci publik ke trust store dengan izin untuk Package, lalu
+// mengembalikan entry yang tersimpan. Kalau keyid sudah ada, Package ditambahkan ke entry itu.
 func (service Service) TrustAdd(options TrustAddOptions) (contract.Entry, error) {
 	if options.Key == "" || options.Store == "" || !trust.PackagePattern.MatchString(options.Package) || samePath(options.Store, options.Key) {
 		return contract.Entry{}, fmt.Errorf("invalid package, key, or store path")
@@ -43,6 +45,7 @@ func (service Service) TrustAdd(options TrustAddOptions) (contract.Entry, error)
 	return contract.Entry{}, fmt.Errorf("added trust entry not found")
 }
 
+// TrustList mengembalikan semua entry di trust store
 func (service Service) TrustList(path string) ([]contract.Entry, error) {
 	if path == "" {
 		return nil, fmt.Errorf("missing trust store path")
@@ -57,6 +60,8 @@ func (service Service) TrustList(path string) ([]contract.Entry, error) {
 	return store.Keys, nil
 }
 
+// TrustRemove menghapus kunci dengan keyid tertentu dari trust store.
+// Gagal kalau keyid tidak valid atau tidak ada.
 func (service Service) TrustRemove(path, keyid string) error {
 	if path == "" || !trust.KeyIDPattern.MatchString(keyid) {
 		return fmt.Errorf("invalid keyid or store path")

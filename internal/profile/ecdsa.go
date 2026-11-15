@@ -49,6 +49,8 @@ func (p ecdsaP256) Verify(pub crypto.PublicKey, message, signature []byte) bool 
 
 type ecdsaSig struct{ R, S *big.Int }
 
+// DERToRaw mengubah signature ECDSA P-256 dari DER ke format r‖s 64 byte
+// (r dan s masing-masing 32 byte). Gagal kalau DER tidak valid atau r, s di luar rentang.
 func DERToRaw(der []byte) ([]byte, error) {
 	var sig ecdsaSig
 	if rest, err := asn1.Unmarshal(der, &sig); err != nil || len(rest) != 0 ||
@@ -61,6 +63,7 @@ func DERToRaw(der []byte) ([]byte, error) {
 	return raw, nil
 }
 
+// RawToDER kebalikan dari DERToRaw. Gagal kalau raw tidak 64 byte.
 func RawToDER(raw []byte) ([]byte, error) {
 	if len(raw) != 64 {
 		return nil, errors.New("ecdsa: raw signature must be 64 bytes")

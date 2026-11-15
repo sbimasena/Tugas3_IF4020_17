@@ -15,6 +15,8 @@ import (
 
 const sbomManifestSchema = "minisign-sbom-manifest/v1"
 
+// SBOMManifest adalah isi yang ditandatangani oleh SignSBOM. Isinya data SBOM dan
+// SHA-256 file release yang terkait.
 type SBOMManifest struct {
 	Schema        string `json:"schema"`
 	Package       string `json:"package"`
@@ -27,9 +29,27 @@ type SBOMManifest struct {
 	ReleaseSHA256 string `json:"release_sha256"`
 }
 
+// SBOMSignOptions berisi opsi untuk SignSBOM
+//
+//   - SBOM: file SBOM dalam format JSON
+//   - Release: file release yang dikaitkan dengan SBOM
+//   - Package, Version: aturannya sama dengan contract.Manifest
+//   - Key: kunci privat PEM
+//   - Out: file bundle, tidak boleh sudah ada atau sama dengan file input
 type SBOMSignOptions struct{ SBOM, Release, Package, Version, Key, Out string }
+
+// SBOMVerifyOptions berisi opsi untuk VerifySBOM
+//
+//   - SBOM: file SBOM dalam format JSON
+//   - Release: file release yang dikaitkan dengan SBOM
+//   - Bundle: file bundle dari SignSBOM
+//   - TrustStore: file trust store
+//   - Package, Version: harus sama dengan isi manifest
 type SBOMVerifyOptions struct{ SBOM, Release, Bundle, TrustStore, Package, Version string }
 
+// SignSBOM menandatangani SBOM dan mengaitkannya ke file release lewat SHA-256 release,
+// lalu menulis bundle JSON ke Out. Gagal kalau opsi atau kunci tidak valid, SBOM bukan
+// JSON yang valid, Out sudah ada, atau ukurannya lewat batas (manifest 16 KiB, bundle 64 KiB).
 func (service Service) SignSBOM(o SBOMSignOptions) error {
 	if o.SBOM == "" || o.Release == "" || o.Key == "" || o.Out == "" || o.Package == "" || o.Version == "" {
 		return fmt.Errorf("missing required option")
@@ -90,6 +110,8 @@ func (service Service) SignSBOM(o SBOMSignOptions) error {
 	return writeNew(o.Out, append(bundle, '\n'), 0644)
 }
 
+// VerifySBOM mengecek SBOM dan file release dengan bundle dari SignSBOM dan trust store.
+// Exit code-nya sama dengan Verify, dengan tambahan status SBOM_MISMATCH dan RELEASE_MISMATCH.
 func VerifySBOM(core contract.Core, o SBOMVerifyOptions) (Result, int) {
 	r := Result{}
 	fail := func(status string, e any) (Result, int) {

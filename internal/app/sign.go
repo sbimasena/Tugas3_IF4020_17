@@ -11,6 +11,9 @@ import (
 	"kelompok17/internal/trust"
 )
 
+// Sign menghitung SHA-256 artifact, membuat manifest canonical, menandatanganinya,
+// lalu menulis bundle JSON ke Out. Gagal kalau opsi atau kunci tidak valid, Out sudah
+// ada, atau ukurannya lewat batas (manifest 16 KiB, bundle 64 KiB).
 func (service Service) Sign(options SignOptions) error {
 	if options.File == "" || options.Key == "" || options.Out == "" {
 		return fmt.Errorf("missing artifact, key, or output path")
