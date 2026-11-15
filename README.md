@@ -31,7 +31,15 @@ Baru bisa help dan version, yg lain harus connect ke toto
 
 ## Misal udah integrate, coba ini
 
-Buat `artifact.bin` sebagai berkas yang ingin ditandatangani:
+Buat `artifact.bin` sebagai berkas yang ingin ditandatangani, contoh buat sbom bisa buat exe ini biar lebih ril wkwk
+```
+winget install Anchore.Syft
+go build -o artifact.exe ./cmd/kelompok17
+syft .\artifact.exe -o cyclonedx-json@1.5=sbom.json
+```
+
+
+baru bisa jalanin
 
 ```sh
 kelompok17 keygen --algorithm ed25519 --out publisher
@@ -39,6 +47,8 @@ kelompok17 trust add --key publisher.pub.pem --package demo --store trust.json
 kelompok17 trust list --store trust.json
 kelompok17 sign --file artifact.bin --package demo --version 1 --key publisher.key.pem --out bundle.json
 kelompok17 verify --file artifact.bin --bundle bundle.json --trust-store trust.json --package demo --version 1 --json
+kelompok17 sbom-sign --sbom sbom.json --release artifact.bin --package demo --version 1 --key publisher.key.pem --out sbom.bundle.json
+kelompok17 sbom-verify --sbom sbom.json --release artifact.bin --bundle sbom.bundle.json --trust-store trust.json --package demo --version 1 --json
 kelompok17 trust remove --keyid <keyid> --store trust.json
 ```
 
