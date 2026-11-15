@@ -28,7 +28,7 @@ var (
 
 func openssl(t *testing.T, args ...string) string {
 	t.Helper()
-	out, err := exec.Command("openssl", args...).CombinedOutput()
+	out, err := exec.Command("openssl", args...).Output()
 	if err != nil {
 		t.Fatalf("openssl %s: %v\n%s", strings.Join(args, " "), err, out)
 	}

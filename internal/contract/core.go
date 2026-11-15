@@ -44,7 +44,6 @@ type Store struct {
 	Keys   []Entry `json:"keys"`
 }
 
-// todo by toto (remove aja kalo udah ya to)
 type Core interface {
 	Generate(algorithm string) (privatePEM, publicPEM []byte, err error)
 	LoadPrivate(pem []byte) (crypto.PrivateKey, string, string, error)
