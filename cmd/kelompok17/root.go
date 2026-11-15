@@ -46,7 +46,7 @@ func newRoot(service app.Service, version string) *cobra.Command {
 		CompletionOptions: cobra.CompletionOptions{DisableDefaultCmd: true},
 	}
 	root.SetVersionTemplate("{{.Version}}\n")
-	root.AddCommand(newKeygen(service), newSign(service), newVerify(service), newTrust(service))
+	root.AddCommand(newKeygen(service), newSign(service), newVerify(service), newTrust(service), newSBOMSign(service), newSBOMVerify(service))
 	return root
 }
 
