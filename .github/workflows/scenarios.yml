@@ -44,13 +44,13 @@ jobs:
           KEY: ${{ secrets.CI_KEY_ED25519 }}
         run: |
           umask 077
+          trap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT
           printf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"
           docker run --rm --network none --user "$(id -u):$(id -g)" \
             -v "$PWD/work:/work" \
             -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \
             "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \
             --key /keys/signing.key.pem --out app.bundle.json
-          rm -f "$RUNNER_TEMP/signing.key.pem"
 
       - name: Tamper one byte (C02)
         if: matrix.id == 'c02'
@@ -65,14 +65,21 @@ jobs:
         run: echo '{"schema":"minisign-trust/v1","keys":[]}' > work/empty-trust.json
 
       - name: Verify (expected to fail)
+        id: verify
         run: |
+          set +e
           docker run --rm --network none --user "$(id -u):$(id -g)" \
             -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \
             "$IMAGE" verify --file "${{ matrix.file }}" --bundle app.bundle.json \
             --trust-store "${{ matrix.trust }}" --package "$PACKAGE" --version "$VERSION" \
             --json > out/verify.json
+          code=$?
+          echo "$code" > out/exit_code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "verify exit code: $code"
 
       - name: Deploy (simulated)
+        if: steps.verify.outputs.code == '0'
         run: |
           echo "deployed $PACKAGE $VERSION" > out/DEPLOYED
 
@@ -91,14 +98,17 @@ jobs:
       - name: Download evidence
         uses: actions/download-artifact@v4
 
-      - name: Assert statuses and missing deploy markers
+      - name: Assert exit codes, statuses and missing deploy markers
         env:
           RESULT: ${{ needs.scenario.result }}
         run: |
           set -eu
-          test "$RESULT" = failure
-          for pair in c02:ARTIFACT_MISMATCH c03:KEY_NOT_TRUSTED c04:INPUT_ERROR; do
-            id=${pair%%:*}; want=${pair#*:}
+          test "$RESULT" = success
+          for row in c02:ARTIFACT_MISMATCH:1 c03:KEY_NOT_TRUSTED:1 c04:INPUT_ERROR:2; do
+            IFS=: read -r id want want_code <<< "$row"
+            got_code=$(cat "$id/exit_code")
+            echo "$id: exit=$got_code (want $want_code)"
+            test "$got_code" = "$want_code"
             got=$(jq -r .status "$id/verify.json")
             echo "$id: status=$got (want $want)"
             test "$got" = "$want"

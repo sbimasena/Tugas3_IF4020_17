@@ -49,13 +49,13 @@ jobs:
           KEY: ${{ secrets[matrix.secret] }}
         run: |
           umask 077
+          trap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT
           printf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"
           docker run --rm --network none --user "$(id -u):$(id -g)" \
             -v "$PWD/work:/work" \
             -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \
             "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \
             --key /keys/signing.key.pem --out app.bundle.json
-          rm -f "$RUNNER_TEMP/signing.key.pem"
 
       - name: Verify
         run: |
