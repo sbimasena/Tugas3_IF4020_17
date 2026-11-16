@@ -1,0 +1,26 @@
+# image: sha256:a0ebaab6d08c51f034195fb78b0fdc52dab62335630abe662f4f202f41e03dc3, commit: 0c1de58
+c3aa8fd8648ef3f564c173c30342e5803ad1498f18216b9398831ad763cc649b
+exit=0
+c3aa8fd8648ef3f564c173c30342e5803ad1498f18216b9398831ad763cc649b ed25519 demo
+exit=0
+## S01 normal
+exit=0
+OK: SBOM signature and release binding verified
+{"valid":true,"status":"OK","message":"SBOM signature and release binding verified","algorithm":"ed25519","keyid":"c3aa8fd8648ef3f564c173c30342e5803ad1498f18216b9398831ad763cc649b","package":"demo","version":"1.0.0"}
+exit=0
+## S02 satu bit sbom.json dibalik (JSON tetap valid)
+SBOM_MISMATCH: SBOM content digest differs
+{"valid":false,"status":"SBOM_MISMATCH","message":"SBOM content digest differs","algorithm":"ed25519","keyid":"c3aa8fd8648ef3f564c173c30342e5803ad1498f18216b9398831ad763cc649b","package":"demo","version":"1.0.0"}
+exit=1
+## S03 satu bit artefak release dibalik
+RELEASE_MISMATCH: release artifact digest differs
+{"valid":false,"status":"RELEASE_MISMATCH","message":"release artifact digest differs","algorithm":"ed25519","keyid":"c3aa8fd8648ef3f564c173c30342e5803ad1498f18216b9398831ad763cc649b","package":"demo","version":"1.0.0"}
+exit=1
+## S04 versi yang diharapkan berbeda
+METADATA_MISMATCH: package or version differs
+{"valid":false,"status":"METADATA_MISMATCH","message":"package or version differs","algorithm":"ed25519","keyid":"c3aa8fd8648ef3f564c173c30342e5803ad1498f18216b9398831ad763cc649b","package":"demo","version":"1.0.0"}
+exit=1
+## S05 bundle SBOM dipakai di verify biasa
+{"valid":false,"status":"FORMAT_ERROR","message":"json: $: unknown field \"sbom_name\"","algorithm":null,"keyid":null,"package":null,"version":null}
+FORMAT_ERROR: json: $: unknown field "sbom_name"
+exit=1

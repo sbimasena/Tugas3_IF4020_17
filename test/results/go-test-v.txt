@@ -1,0 +1,115 @@
+# go test -count=1 -v ./...
+# commit: 0c1de58
+# tanggal: 2026-11-16T04:45:18Z
+# go version go1.23.12 linux/amd64
+# OpenSSL 3.0.17 1 Jul 2025 (Library: OpenSSL 3.0.17 1 Jul 2025)
+
+go: downloading github.com/spf13/cobra v1.10.1
+go: downloading github.com/spf13/pflag v1.0.9
+=== RUN   TestPercentileNearestRank
+--- PASS: TestPercentileNearestRank (0.00s)
+PASS
+ok  	kelompok17/bench	0.006s
+?   	kelompok17/cmd/kelompok17	[no test files]
+=== RUN   Example
+--- PASS: Example (0.04s)
+PASS
+ok  	kelompok17/internal/app	0.059s
+=== RUN   TestDecode
+--- PASS: TestDecode (0.00s)
+=== RUN   ExampleDecode
+--- PASS: ExampleDecode (0.00s)
+PASS
+ok  	kelompok17/internal/b64	0.013s
+=== RUN   ExampleSupported
+--- PASS: ExampleSupported (0.00s)
+PASS
+ok  	kelompok17/internal/contract	0.006s
+=== RUN   TestU14
+=== RUN   TestU14/rsa-pss-sha256
+    u14_test.go:42: a.json: verify OK (exit 0)
+    u14_test.go:42: b.json: verify OK (exit 0)
+    u14_test.go:51: rsa-pss-sha256: signature identical=false (expected false)
+=== RUN   TestU14/ecdsa-p256-sha256
+    u14_test.go:42: a.json: verify OK (exit 0)
+    u14_test.go:42: b.json: verify OK (exit 0)
+    u14_test.go:51: ecdsa-p256-sha256: signature identical=false (expected false)
+=== RUN   TestU14/ed25519
+    u14_test.go:42: a.json: verify OK (exit 0)
+    u14_test.go:42: b.json: verify OK (exit 0)
+    u14_test.go:51: ed25519: signature identical=true (expected true)
+--- PASS: TestU14 (0.94s)
+    --- PASS: TestU14/rsa-pss-sha256 (0.89s)
+    --- PASS: TestU14/ecdsa-p256-sha256 (0.03s)
+    --- PASS: TestU14/ed25519 (0.03s)
+=== RUN   ExampleCore
+--- PASS: ExampleCore (0.00s)
+PASS
+ok  	kelompok17/internal/core	0.951s
+=== RUN   TestLoad
+--- PASS: TestLoad (0.30s)
+=== RUN   TestRejectedKeys
+--- PASS: TestRejectedKeys (0.77s)
+=== RUN   ExampleLoadPublic
+--- PASS: ExampleLoadPublic (0.00s)
+PASS
+ok  	kelompok17/internal/keys	1.073s
+=== RUN   TestCanonicalRoundTrip
+--- PASS: TestCanonicalRoundTrip (0.00s)
+=== RUN   TestParseRejectsNonCanonical
+--- PASS: TestParseRejectsNonCanonical (0.00s)
+=== RUN   TestValidate
+--- PASS: TestValidate (0.00s)
+=== RUN   ExampleCanonical
+--- PASS: ExampleCanonical (0.00s)
+=== RUN   ExampleParse
+--- PASS: ExampleParse (0.00s)
+PASS
+ok  	kelompok17/internal/manifest	0.007s
+=== RUN   TestSignVerify
+--- PASS: TestSignVerify (0.63s)
+=== RUN   TestNoDoubleHashing
+--- PASS: TestNoDoubleHashing (0.90s)
+=== RUN   TestU14SignTwice
+    profile_test.go:86: rsa-pss-sha256: identical=false
+    profile_test.go:86: ecdsa-p256-sha256: identical=false
+    profile_test.go:86: ed25519: identical=true
+--- PASS: TestU14SignTwice (0.52s)
+=== RUN   TestECDSAOutOfDomainAndConversion
+--- PASS: TestECDSAOutOfDomainAndConversion (0.44s)
+=== RUN   Example
+--- PASS: Example (0.22s)
+=== RUN   ExampleGet
+--- PASS: ExampleGet (0.00s)
+=== RUN   ExampleRawToDER
+--- PASS: ExampleRawToDER (0.00s)
+PASS
+ok  	kelompok17/internal/profile	2.714s
+=== RUN   TestUnmarshal
+--- PASS: TestUnmarshal (0.00s)
+=== RUN   TestUnmarshalRejects
+--- PASS: TestUnmarshalRejects (0.00s)
+=== RUN   ExampleUnmarshal
+--- PASS: ExampleUnmarshal (0.00s)
+PASS
+ok  	kelompok17/internal/strictjson	0.009s
+=== RUN   ExampleAdd
+--- PASS: ExampleAdd (0.00s)
+=== RUN   ExampleParse
+--- PASS: ExampleParse (0.00s)
+PASS
+ok  	kelompok17/internal/trust	0.009s
+=== RUN   TestOursToOpenSSL
+    interop_test.go:83: rsa-pss-sha256: Verified OK
+    interop_test.go:83: ecdsa-p256-sha256: Verified OK
+    interop_test.go:83: ed25519: Signature Verified Successfully
+--- PASS: TestOursToOpenSSL (1.61s)
+=== RUN   TestOpenSSLToOurs
+    interop_test.go:117: rsa-pss-sha256: OpenSSL signature verified by us: true
+    interop_test.go:117: ecdsa-p256-sha256: OpenSSL signature verified by us: true
+    interop_test.go:117: ed25519: OpenSSL signature verified by us: true
+--- PASS: TestOpenSSLToOurs (1.33s)
+PASS
+ok  	kelompok17/test/interop	2.942s
+
+# exit code go test: 0
