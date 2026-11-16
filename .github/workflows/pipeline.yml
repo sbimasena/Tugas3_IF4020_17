@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 env:
-  IMAGE: ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a
+  IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
   PACKAGE: kelompok17-demo
   VERSION: 1.0.0
 

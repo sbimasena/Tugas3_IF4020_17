@@ -23,8 +23,8 @@ Dokumentasi API: (https://sbimasena.github.io/Tugas3_IF4020_17/)
 
 | Versi program (`--version`) | Tag repo | Image | Isi |
 |---|---|---|---|
-| `0.1.0` | belum ada tag, dibangun lewat `workflow_dispatch` dari commit `551f3f2` (11 November 2026) | `ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a` | keygen, sign, verify, trust. Dipakai `pipeline.yml` dan `scenarios.yml` |
-| [isi versi berikutnya] | [isi tag] | [isi digest] | ditambah sbom-sign dan sbom-verify |
+| `0.1.0` | belum ada tag, dibangun lewat `workflow_dispatch` dari commit `551f3f2` (11 November 2026) | `ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a` | keygen, sign, verify, trust |
+| `1.0.0` | [`v1.0.0`](https://github.com/sbimasena/Tugas3_IF4020_17/releases/tag/v1.0.0), dibangun otomatis oleh `image.yml` saat tag di-push | `ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540` | ditambah sbom-sign dan sbom-verify. Dipakai `pipeline.yml` dan `scenarios.yml` |
 
 
 ## Run
@@ -34,9 +34,9 @@ Dokumentasi API: (https://sbimasena.github.io/Tugas3_IF4020_17/)
 Program dijalankan sebagai container di runner Linux amd64.
 
 ```sh
-docker pull ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a
+docker pull ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
 docker run --rm --network none --user "$(id -u):$(id -g)" -v "$PWD:/work" \
-  ghcr.io/sbimasena/kelompok17@sha256:082ea0321c599b22b3a9fa739b349528397ece0fcd03be36781e878982eff59a --help
+  ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540 --help
 ```
 
 ### Di CI
