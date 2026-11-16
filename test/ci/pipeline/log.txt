@@ -1,0 +1,717 @@
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	﻿2026-11-16T08:53:45.7075109Z Current runner version: '2.338.2'
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7108639Z ##[group]Runner Image Provisioner
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7110177Z Hosted Compute Agent
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7111338Z Version: 20261103.629
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7112485Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7113814Z Build Date: 2026-11-03T17:26:59Z
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7115064Z Worker ID: {1305cd1e-7be6-46b9-8e8b-f264f1e8be5d}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7116565Z Region: westus
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7117685Z Cloud: Azure
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7118713Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7120840Z ##[group]Operating System
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7121954Z Ubuntu
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7122994Z 26.04.1
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7124011Z LTS
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7125081Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7126343Z ##[group]Runner Image
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7127420Z Image: ubuntu-26.04
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7128479Z Version: 20261111.196.1
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7130244Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7132695Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7134191Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7136288Z ##[group]GITHUB_TOKEN Permissions
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7138820Z Contents: read
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7139960Z Metadata: read
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7141036Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7144140Z Secret source: Actions
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7146502Z Cache mode: write
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7148273Z Prepare workflow directory
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7685653Z Prepare all required actions
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:45.7743247Z Getting action download info
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:46.1323017Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:46.3305679Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Set up job	2026-11-16T08:53:46.5539920Z Complete job name: c01 (rsa-pss-sha256, CI_KEY_RSA)
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	﻿2026-11-16T08:53:46.6619783Z ##[group]Run actions/checkout@v4
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6621248Z with:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6622057Z   repository: sbimasena/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6626851Z   token: ***
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6627640Z   ssh-strict: true
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6628539Z   ssh-user: git
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6629322Z   persist-credentials: true
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6630149Z   clean: true
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6630931Z   sparse-checkout-cone-mode: true
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6631812Z   fetch-depth: 1
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6632579Z   fetch-tags: false
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6633356Z   show-progress: true
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6634147Z   lfs: false
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6634911Z   submodules: false
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6635871Z   set-safe-directory: true
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6636730Z   allow-unsafe-pr-checkout: false
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6637898Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6639159Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6640534Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6641417Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:46.6642175Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3438616Z Syncing repository: sbimasena/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3441883Z ##[group]Getting Git version info
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3443617Z Working directory is '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3446316Z [command]/usr/bin/git version
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3580004Z git version 2.56.1
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3604334Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3624829Z Temporarily overriding HOME='/home/runner/work/_temp/529f78fe-320a-489b-a0d9-1d61be264f65' before making global git config changes
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3629594Z Adding repository directory to the temporary git global config as a safe directory
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3633413Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3721505Z Deleting the contents of '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3727504Z ##[group]Initializing the repository
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.3731288Z [command]/usr/bin/git init /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4038614Z hint: Using 'master' as the name for the initial branch. This default branch name
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4042140Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4045129Z hint: to use in all of your new repositories, which will suppress this warning,
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4048277Z hint: call:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4049765Z hint:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4051400Z hint: 	git config --global init.defaultBranch <name>
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4054329Z hint:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4057116Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4060529Z hint: 'development'. The just-created branch can be renamed via this command:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4063430Z hint:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4065653Z hint: 	git branch -m <name>
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4067659Z hint:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4069609Z hint: Disable this message with "git config set advice.defaultBranchName false"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4071651Z Initialized empty Git repository in /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/.git/
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4078009Z [command]/usr/bin/git remote add origin https://github.com/sbimasena/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4150991Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4154608Z ##[group]Disabling automatic garbage collection
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4157331Z [command]/usr/bin/git config --local gc.auto 0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4200144Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4203920Z ##[group]Setting up auth
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4207853Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.4252122Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.5327427Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.5365626Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.5658675Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.5688949Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.5973529Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.6070466Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.6073768Z ##[group]Fetching the repository
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:47.6080418Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0e846089847993266ec5e9a3e45187a70bfc3ade:refs/remotes/origin/main
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1377630Z From https://github.com/sbimasena/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1379651Z  * [new ref]         0e846089847993266ec5e9a3e45187a70bfc3ade -> origin/main
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1384021Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1386523Z ##[group]Determining the checkout info
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1388931Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1393046Z [command]/usr/bin/git sparse-checkout disable
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1458272Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1492959Z ##[group]Checking out the ref
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1496571Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1791495Z Switched to a new branch 'main'
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1798698Z branch 'main' set up to track 'origin/main'.
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1808431Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1860628Z [command]/usr/bin/git log -1 --format=%H
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Checkout	2026-11-16T08:53:48.1887300Z 0e846089847993266ec5e9a3e45187a70bfc3ade
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	﻿2026-11-16T08:53:48.2177458Z ##[group]Run docker pull "$IMAGE"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2179439Z ^[[36;1mdocker pull "$IMAGE"^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2234829Z shell: /usr/bin/bash -e {0}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2236547Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2239028Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2241952Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2243422Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.2244720Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:48.8998280Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540: Pulling from sbimasena/kelompok17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.4310198Z abf21d361d3e: Pulling fs layer
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.4311972Z c85846afa1fb: Pulling fs layer
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.4857913Z 44136fa355b3: Already exists
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.5854869Z abf21d361d3e: Download complete
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.6856907Z 2975b0097aaa: Download complete
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.7823102Z c85846afa1fb: Download complete
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.7839389Z abf21d361d3e: Pull complete
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.7857421Z c85846afa1fb: Pull complete
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.7859146Z Digest: sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.7861497Z Status: Downloaded newer image for ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Pull image	2026-11-16T08:53:49.7863954Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	﻿2026-11-16T08:53:49.8007114Z ##[group]Run echo "uid:gid = $(id -u):$(id -g)"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8008115Z ^[[36;1mecho "uid:gid = $(id -u):$(id -g)"^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8009177Z ^[[36;1mif [ -t 0 ]; then echo "stdin is a TTY"; else echo "no TTY"; fi^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8086235Z shell: /usr/bin/bash -e {0}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8086921Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8087964Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8089189Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8089841Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8090425Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8254634Z uid:gid = 1001:1001
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Runner identity (C05)	2026-11-16T08:53:49.8255644Z no TTY
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	﻿2026-11-16T08:53:49.8297525Z ##[group]Run mkdir -p work out
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8298021Z ^[[36;1mmkdir -p work out^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8298491Z ^[[36;1mtar czf work/app.tar.gz cmd internal go.mod go.sum^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8298995Z ^[[36;1mls -l work^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8349951Z shell: /usr/bin/bash -e {0}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8350375Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8351028Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8351776Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8352155Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8352494Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8545149Z total 24
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Build artifact	2026-11-16T08:53:49.8545985Z -rw-r--r-- 1 runner runner 22669 Nov 16 08:53 app.tar.gz
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	﻿2026-11-16T08:53:49.8598071Z ##[group]Run umask 077
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8598518Z ^[[36;1mumask 077^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8598969Z ^[[36;1mtrap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8599541Z ^[[36;1mprintf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8600137Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8600671Z ^[[36;1m  -v "$PWD/work:/work" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8601184Z ^[[36;1m  -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8601894Z ^[[36;1m  "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8602547Z ^[[36;1m  --key /keys/signing.key.pem --out app.bundle.json^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8657244Z shell: /usr/bin/bash -e {0}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8657671Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8658438Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8659281Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8659816Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8672396Z   KEY: ***
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Sign	2026-11-16T08:53:49.8672757Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	﻿2026-11-16T08:53:50.5070599Z ##[group]Run docker run --rm --network none --user "$(id -u):$(id -g)" \
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5071360Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5071938Z ^[[36;1m  -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5072528Z ^[[36;1m  "$IMAGE" verify --file app.tar.gz --bundle app.bundle.json \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5073215Z ^[[36;1m  --trust-store /trust/trust.json --package "$PACKAGE" --version "$VERSION" \^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5073804Z ^[[36;1m  --json > out/verify.json^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5074210Z ^[[36;1mcat out/verify.json^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5124410Z shell: /usr/bin/bash -e {0}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5124824Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5125726Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5126469Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5126853Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.5127212Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.6579270Z OK: release verified
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Verify	2026-11-16T08:53:50.7008834Z {"valid":true,"status":"OK","message":"release verified","algorithm":"rsa-pss-sha256","keyid":"c1536c8f45850b09de03752139491c36fefc1d9903047bd6e9d73c90527b5c85","package":"kelompok17-demo","version":"1.0.0"}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	﻿2026-11-16T08:53:50.7117683Z ##[group]Run echo "deployed $PACKAGE $VERSION (rsa-pss-sha256)" > out/DEPLOYED
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7118449Z ^[[36;1mecho "deployed $PACKAGE $VERSION (rsa-pss-sha256)" > out/DEPLOYED^[[0m
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7168836Z shell: /usr/bin/bash -e {0}
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7169257Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7169915Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7170673Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7171066Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Deploy (simulated)	2026-11-16T08:53:50.7171424Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	﻿2026-11-16T08:53:50.7321390Z ##[group]Run actions/upload-artifact@v4
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7321873Z with:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7322231Z   name: c01-rsa-pss-sha256
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7322612Z   path: out/
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	work/app.bundle.json
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7323025Z   if-no-files-found: warn
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7323399Z   compression-level: 6
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7323758Z   overwrite: false
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7324101Z   include-hidden-files: false
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7324467Z env:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7325059Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7326078Z   PACKAGE: kelompok17-demo
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7326460Z   VERSION: 1.0.0
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.7326792Z ##[endgroup]
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9115750Z (node:2573) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9116928Z (Use `node --trace-deprecation ...` to show where the warning was created)
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9209424Z Multiple search paths detected. Calculating the least common ancestor of all paths
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9211758Z The least common ancestor is /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17. This will be the root directory of the artifact
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9212977Z With the provided path, there will be 3 files uploaded
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9214282Z Artifact name is valid!
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:50.9217921Z Root directory input is valid!
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:51.3200977Z Beginning upload of artifact content to blob storage
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:51.3480176Z (node:2573) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:51.6241824Z Uploaded bytes 1388
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:51.7041688Z Finished uploading artifact content to blob storage!
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:51.7043608Z SHA256 digest of uploaded artifact zip is 9c197789bf87eaed73bb40175bff5aeb9bb555c494ceb00dde6e732b98020229
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:51.7045730Z Finalizing artifact upload
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:52.1195992Z Artifact c01-rsa-pss-sha256.zip successfully finalized. Artifact ID 14209803666
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:52.1197846Z Artifact c01-rsa-pss-sha256 has been successfully uploaded! Final size is 1388 bytes. Artifact ID is 14209803666
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Upload evidence	2026-11-16T08:53:52.1203824Z Artifact download URL: https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43834964773/artifacts/14209803666
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	﻿2026-11-16T08:53:52.1441354Z Post job cleanup.
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2330360Z [command]/usr/bin/git version
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2391970Z git version 2.56.1
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2456758Z Temporarily overriding HOME='/home/runner/work/_temp/cc72f6ff-1143-4642-a8d4-f861df06bf09' before making global git config changes
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2458694Z Adding repository directory to the temporary git global config as a safe directory
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2460324Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2488625Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2532610Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2874777Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2904916Z http.https://github.com/.extraheader
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2918142Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.2968095Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.3289284Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Post Checkout	2026-11-16T08:53:52.3326247Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Complete job	﻿2026-11-16T08:53:52.3797864Z Cleaning up orphan processes
+c01 (rsa-pss-sha256, CI_KEY_RSA)	Complete job	2026-11-16T08:53:52.4268651Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	﻿2026-11-16T08:53:44.5642040Z Current runner version: '2.338.2'
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5672296Z ##[group]Runner Image Provisioner
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5673775Z Hosted Compute Agent
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5674904Z Version: 20261103.629
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5676005Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5677346Z Build Date: 2026-11-03T17:26:59Z
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5678595Z Worker ID: {a94f7b69-4549-4d8a-9f6d-134c44ac373e}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5679853Z Region: eastus
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5681379Z Cloud: Azure
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5682506Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5684646Z ##[group]Operating System
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5685848Z Ubuntu
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5686827Z 26.04.1
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5687849Z LTS
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5688902Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5689923Z ##[group]Runner Image
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5691559Z Image: ubuntu-26.04
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5692659Z Version: 20261111.196.1
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5694343Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5696766Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5698340Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5700397Z ##[group]GITHUB_TOKEN Permissions
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5703088Z Contents: read
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5704278Z Metadata: read
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5705380Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5708068Z Secret source: Actions
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5710053Z Cache mode: write
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.5711717Z Prepare workflow directory
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.6143579Z Prepare all required actions
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.6195077Z Getting action download info
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.8033603Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:44.9388521Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Set up job	2026-11-16T08:53:45.1206731Z Complete job name: c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	﻿2026-11-16T08:53:45.2282624Z ##[group]Run actions/checkout@v4
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2283888Z with:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2284692Z   repository: sbimasena/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2288947Z   token: ***
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2289726Z   ssh-strict: true
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2290670Z   ssh-user: git
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2291450Z   persist-credentials: true
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2292277Z   clean: true
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2293053Z   sparse-checkout-cone-mode: true
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2293915Z   fetch-depth: 1
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2294674Z   fetch-tags: false
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2295443Z   show-progress: true
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2296209Z   lfs: false
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2296946Z   submodules: false
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2297725Z   set-safe-directory: true
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2298564Z   allow-unsafe-pr-checkout: false
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2299667Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2301017Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2302390Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2303277Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.2304049Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6811000Z Syncing repository: sbimasena/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6814345Z ##[group]Getting Git version info
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6816063Z Working directory is '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6818810Z [command]/usr/bin/git version
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6863026Z git version 2.56.1
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6890660Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6907780Z Temporarily overriding HOME='/home/runner/work/_temp/27c3e810-5cb4-42a8-9709-099e31fc53b7' before making global git config changes
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6911865Z Adding repository directory to the temporary git global config as a safe directory
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.6915929Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7010655Z Deleting the contents of '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7014899Z ##[group]Initializing the repository
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7021541Z [command]/usr/bin/git init /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7252671Z hint: Using 'master' as the name for the initial branch. This default branch name
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7256968Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7259747Z hint: to use in all of your new repositories, which will suppress this warning,
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7263025Z hint: call:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7264879Z hint:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7267002Z hint: 	git config --global init.defaultBranch <name>
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7268377Z hint:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7269441Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7282054Z hint: 'development'. The just-created branch can be renamed via this command:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7283394Z hint:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7284254Z hint: 	git branch -m <name>
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7285179Z hint:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7286340Z hint: Disable this message with "git config set advice.defaultBranchName false"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7288085Z Initialized empty Git repository in /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/.git/
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7292189Z [command]/usr/bin/git remote add origin https://github.com/sbimasena/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7355191Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7358563Z ##[group]Disabling automatic garbage collection
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7361406Z [command]/usr/bin/git config --local gc.auto 0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7416085Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7418580Z ##[group]Setting up auth
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7421204Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7466253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.7975830Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8014404Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8294123Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8332528Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8617286Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8682150Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8684714Z ##[group]Fetching the repository
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:45.8692402Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0e846089847993266ec5e9a3e45187a70bfc3ade:refs/remotes/origin/main
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1472424Z From https://github.com/sbimasena/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1475365Z  * [new ref]         0e846089847993266ec5e9a3e45187a70bfc3ade -> origin/main
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1482722Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1485277Z ##[group]Determining the checkout info
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1488339Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1490438Z [command]/usr/bin/git sparse-checkout disable
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1548265Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1583752Z ##[group]Checking out the ref
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1587126Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1862546Z Switched to a new branch 'main'
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1867816Z branch 'main' set up to track 'origin/main'.
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1876968Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1924029Z [command]/usr/bin/git log -1 --format=%H
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Checkout	2026-11-16T08:53:46.1950289Z 0e846089847993266ec5e9a3e45187a70bfc3ade
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	﻿2026-11-16T08:53:46.2250476Z ##[group]Run docker pull "$IMAGE"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2252927Z ^[[36;1mdocker pull "$IMAGE"^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2310593Z shell: /usr/bin/bash -e {0}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2312576Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2315573Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2319049Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2321031Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.2322742Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.5220064Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540: Pulling from sbimasena/kelompok17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.6686396Z 44136fa355b3: Already exists
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.6970777Z c85846afa1fb: Pulling fs layer
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.6975149Z abf21d361d3e: Pulling fs layer
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.7686835Z 2975b0097aaa: Download complete
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.7691187Z abf21d361d3e: Download complete
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.8432375Z c85846afa1fb: Download complete
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.8444566Z abf21d361d3e: Pull complete
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.8457519Z c85846afa1fb: Pull complete
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.8461439Z Digest: sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.8468834Z Status: Downloaded newer image for ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Pull image	2026-11-16T08:53:46.8475330Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	﻿2026-11-16T08:53:46.8704266Z ##[group]Run echo "uid:gid = $(id -u):$(id -g)"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8707819Z ^[[36;1mecho "uid:gid = $(id -u):$(id -g)"^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8711461Z ^[[36;1mif [ -t 0 ]; then echo "stdin is a TTY"; else echo "no TTY"; fi^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8767662Z shell: /usr/bin/bash -e {0}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8769431Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8772297Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8775428Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8777180Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8778768Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8931620Z uid:gid = 1001:1001
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Runner identity (C05)	2026-11-16T08:53:46.8934653Z no TTY
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	﻿2026-11-16T08:53:46.9034269Z ##[group]Run mkdir -p work out
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9036154Z ^[[36;1mmkdir -p work out^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9038166Z ^[[36;1mtar czf work/app.tar.gz cmd internal go.mod go.sum^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9040508Z ^[[36;1mls -l work^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9090556Z shell: /usr/bin/bash -e {0}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9092302Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9094912Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9097951Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9099676Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9101488Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9304704Z total 24
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Build artifact	2026-11-16T08:53:46.9306992Z -rw-r--r-- 1 runner runner 22676 Nov 16 08:53 app.tar.gz
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	﻿2026-11-16T08:53:46.9417544Z ##[group]Run umask 077
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9419274Z ^[[36;1mumask 077^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9421403Z ^[[36;1mtrap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9423884Z ^[[36;1mprintf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9426535Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9428886Z ^[[36;1m  -v "$PWD/work:/work" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9431396Z ^[[36;1m  -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9434400Z ^[[36;1m  "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9437202Z ^[[36;1m  --key /keys/signing.key.pem --out app.bundle.json^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9488552Z shell: /usr/bin/bash -e {0}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9490390Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9492975Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9495970Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9497715Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9503481Z   KEY: ***
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Sign	2026-11-16T08:53:46.9505031Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	﻿2026-11-16T08:53:47.4537437Z ##[group]Run docker run --rm --network none --user "$(id -u):$(id -g)" \
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4538316Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4539004Z ^[[36;1m  -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4539717Z ^[[36;1m  "$IMAGE" verify --file app.tar.gz --bundle app.bundle.json \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4540861Z ^[[36;1m  --trust-store /trust/trust.json --package "$PACKAGE" --version "$VERSION" \^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4541573Z ^[[36;1m  --json > out/verify.json^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4542095Z ^[[36;1mcat out/verify.json^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4594982Z shell: /usr/bin/bash -e {0}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4595510Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4596221Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4597011Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4597483Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.4597940Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.6052213Z OK: release verified
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Verify	2026-11-16T08:53:47.6546787Z {"valid":true,"status":"OK","message":"release verified","algorithm":"ecdsa-p256-sha256","keyid":"1b8adff1fb9ff273652e54f50b5ee8776ebd8d93705534e6226a23af5d327419","package":"kelompok17-demo","version":"1.0.0"}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	﻿2026-11-16T08:53:47.6632551Z ##[group]Run echo "deployed $PACKAGE $VERSION (ecdsa-p256-sha256)" > out/DEPLOYED
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6633493Z ^[[36;1mecho "deployed $PACKAGE $VERSION (ecdsa-p256-sha256)" > out/DEPLOYED^[[0m
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6684961Z shell: /usr/bin/bash -e {0}
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6685466Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6686231Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6687070Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6687543Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Deploy (simulated)	2026-11-16T08:53:47.6687986Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	﻿2026-11-16T08:53:47.6836678Z ##[group]Run actions/upload-artifact@v4
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6837295Z with:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6837793Z   name: c01-ecdsa-p256-sha256
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6838304Z   path: out/
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	work/app.bundle.json
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6838838Z   if-no-files-found: warn
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6839310Z   compression-level: 6
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6839804Z   overwrite: false
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6840435Z   include-hidden-files: false
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6840914Z env:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6841614Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6842419Z   PACKAGE: kelompok17-demo
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6842894Z   VERSION: 1.0.0
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.6843331Z ##[endgroup]
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8532350Z (node:2594) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8533577Z (Use `node --trace-deprecation ...` to show where the warning was created)
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8625553Z Multiple search paths detected. Calculating the least common ancestor of all paths
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8670600Z The least common ancestor is /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17. This will be the root directory of the artifact
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8672174Z With the provided path, there will be 3 files uploaded
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8673492Z Artifact name is valid!
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:47.8674147Z Root directory input is valid!
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.0831114Z Beginning upload of artifact content to blob storage
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.1101517Z (node:2594) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.1435548Z Uploaded bytes 1063
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.1605548Z Finished uploading artifact content to blob storage!
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.1607474Z SHA256 digest of uploaded artifact zip is bd50d7f7f42a79ad333045e3850da5558a64edc1fb14e2b0dc8e688eb8a6b883
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.1609628Z Finalizing artifact upload
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.4996768Z Artifact c01-ecdsa-p256-sha256.zip successfully finalized. Artifact ID 14209813887
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.4998596Z Artifact c01-ecdsa-p256-sha256 has been successfully uploaded! Final size is 1063 bytes. Artifact ID is 14209813887
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Upload evidence	2026-11-16T08:53:48.5004999Z Artifact download URL: https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43834964773/artifacts/14209813887
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	﻿2026-11-16T08:53:48.5252312Z Post job cleanup.
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6147974Z [command]/usr/bin/git version
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6201616Z git version 2.56.1
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6235958Z Temporarily overriding HOME='/home/runner/work/_temp/e43895ae-a10e-4e98-8a07-cb564d406d65' before making global git config changes
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6237657Z Adding repository directory to the temporary git global config as a safe directory
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6241584Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6285139Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6326228Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6636561Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6667739Z http.https://github.com/.extraheader
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6682535Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.6730630Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.7091597Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Post Checkout	2026-11-16T08:53:48.7120299Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Complete job	﻿2026-11-16T08:53:48.7556706Z Cleaning up orphan processes
+c01 (ecdsa-p256-sha256, CI_KEY_ECDSA)	Complete job	2026-11-16T08:53:48.8012653Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+c01 (ed25519, CI_KEY_ED25519)	Set up job	﻿2026-11-16T08:53:45.3243010Z Current runner version: '2.338.2'
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3273155Z ##[group]Runner Image Provisioner
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3274815Z Hosted Compute Agent
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3276054Z Version: 20261103.629
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3277246Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3278708Z Build Date: 2026-11-03T17:26:59Z
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3280029Z Worker ID: {b8684ca3-28ec-40ad-af71-096fe11daf79}
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3281350Z Region: westus
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3282458Z Cloud: Azure
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3283927Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3286383Z ##[group]Operating System
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3287651Z Ubuntu
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3288728Z 26.04.1
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3289833Z LTS
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3290976Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3292122Z ##[group]Runner Image
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3293631Z Image: ubuntu-26.04
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3294803Z Version: 20261111.196.1
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3296553Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3299093Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3300670Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3302905Z ##[group]GITHUB_TOKEN Permissions
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3305664Z Contents: read
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3306864Z Metadata: read
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3307972Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3310780Z Secret source: Actions
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3312666Z Cache mode: write
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3314330Z Prepare workflow directory
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3818224Z Prepare all required actions
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.3868035Z Getting action download info
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.7579229Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:45.8891083Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+c01 (ed25519, CI_KEY_ED25519)	Set up job	2026-11-16T08:53:46.0671466Z Complete job name: c01 (ed25519, CI_KEY_ED25519)
+c01 (ed25519, CI_KEY_ED25519)	Checkout	﻿2026-11-16T08:53:46.1740164Z ##[group]Run actions/checkout@v4
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1741501Z with:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1742329Z   repository: sbimasena/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1747002Z   token: ***
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1747807Z   ssh-strict: true
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1748609Z   ssh-user: git
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1749416Z   persist-credentials: true
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1750264Z   clean: true
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1751077Z   sparse-checkout-cone-mode: true
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1751979Z   fetch-depth: 1
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1752926Z   fetch-tags: false
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1753741Z   show-progress: true
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1754557Z   lfs: false
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1755329Z   submodules: false
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1756145Z   set-safe-directory: true
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1757023Z   allow-unsafe-pr-checkout: false
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1758206Z env:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1759445Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1760832Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1761729Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.1762522Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4738685Z Syncing repository: sbimasena/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4743190Z ##[group]Getting Git version info
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4745442Z Working directory is '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4748677Z [command]/usr/bin/git version
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4760376Z git version 2.56.1
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4784929Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4803413Z Temporarily overriding HOME='/home/runner/work/_temp/747602e5-5d02-4d0e-85b8-9d48f568b045' before making global git config changes
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4806763Z Adding repository directory to the temporary git global config as a safe directory
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4811041Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4888678Z Deleting the contents of '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4899608Z ##[group]Initializing the repository
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.4901414Z [command]/usr/bin/git init /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5023425Z hint: Using 'master' as the name for the initial branch. This default branch name
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5025780Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5027642Z hint: to use in all of your new repositories, which will suppress this warning,
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5029174Z hint: call:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5030202Z hint:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5031368Z hint: 	git config --global init.defaultBranch <name>
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5033007Z hint:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5034370Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5036183Z hint: 'development'. The just-created branch can be renamed via this command:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5037537Z hint:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5038525Z hint: 	git branch -m <name>
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5039543Z hint:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5040790Z hint: Disable this message with "git config set advice.defaultBranchName false"
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5053892Z Initialized empty Git repository in /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/.git/
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5069418Z [command]/usr/bin/git remote add origin https://github.com/sbimasena/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5131465Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5134199Z ##[group]Disabling automatic garbage collection
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5136238Z [command]/usr/bin/git config --local gc.auto 0
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5180203Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5182561Z ##[group]Setting up auth
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5188279Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5231184Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5735069Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.5776081Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.6067656Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.6109168Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.6399711Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.6442140Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.6444080Z ##[group]Fetching the repository
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:46.6452439Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0e846089847993266ec5e9a3e45187a70bfc3ade:refs/remotes/origin/main
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0615903Z From https://github.com/sbimasena/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0618137Z  * [new ref]         0e846089847993266ec5e9a3e45187a70bfc3ade -> origin/main
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0624875Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0627471Z ##[group]Determining the checkout info
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0629294Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0630883Z [command]/usr/bin/git sparse-checkout disable
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0690087Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0752125Z ##[group]Checking out the ref
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.0754505Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.1040085Z Switched to a new branch 'main'
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.1045294Z branch 'main' set up to track 'origin/main'.
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.1054789Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.1108780Z [command]/usr/bin/git log -1 --format=%H
+c01 (ed25519, CI_KEY_ED25519)	Checkout	2026-11-16T08:53:47.1139198Z 0e846089847993266ec5e9a3e45187a70bfc3ade
+c01 (ed25519, CI_KEY_ED25519)	Pull image	﻿2026-11-16T08:53:47.1439195Z ##[group]Run docker pull "$IMAGE"
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1440767Z ^[[36;1mdocker pull "$IMAGE"^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1499396Z shell: /usr/bin/bash -e {0}
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1500492Z env:
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1502033Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1504131Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1505136Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.1506046Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:47.7602465Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540: Pulling from sbimasena/kelompok17
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.2642256Z 44136fa355b3: Already exists
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.2876726Z c85846afa1fb: Pulling fs layer
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.2877867Z abf21d361d3e: Pulling fs layer
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.4651378Z 2975b0097aaa: Download complete
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5646206Z c85846afa1fb: Download complete
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5649767Z abf21d361d3e: Download complete
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5659775Z c85846afa1fb: Pull complete
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5904538Z abf21d361d3e: Pull complete
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5906054Z Digest: sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5908133Z Status: Downloaded newer image for ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Pull image	2026-11-16T08:53:48.5910221Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	﻿2026-11-16T08:53:48.6066253Z ##[group]Run echo "uid:gid = $(id -u):$(id -g)"
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6067404Z ^[[36;1mecho "uid:gid = $(id -u):$(id -g)"^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6068514Z ^[[36;1mif [ -t 0 ]; then echo "stdin is a TTY"; else echo "no TTY"; fi^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6147724Z shell: /usr/bin/bash -e {0}
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6148797Z env:
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6149785Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6151056Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6151687Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6152208Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6319379Z uid:gid = 1001:1001
+c01 (ed25519, CI_KEY_ED25519)	Runner identity (C05)	2026-11-16T08:53:48.6320154Z no TTY
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	﻿2026-11-16T08:53:48.6368527Z ##[group]Run mkdir -p work out
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6369150Z ^[[36;1mmkdir -p work out^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6369727Z ^[[36;1mtar czf work/app.tar.gz cmd internal go.mod go.sum^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6370353Z ^[[36;1mls -l work^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6424719Z shell: /usr/bin/bash -e {0}
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6425249Z env:
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6425997Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6426851Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6427361Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6427826Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6636793Z total 24
+c01 (ed25519, CI_KEY_ED25519)	Build artifact	2026-11-16T08:53:48.6637918Z -rw-r--r-- 1 runner runner 22674 Nov 16 08:53 app.tar.gz
+c01 (ed25519, CI_KEY_ED25519)	Sign	﻿2026-11-16T08:53:48.6699148Z ##[group]Run umask 077
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6699739Z ^[[36;1mumask 077^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6700356Z ^[[36;1mtrap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6701080Z ^[[36;1mprintf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6701819Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6702475Z ^[[36;1m  -v "$PWD/work:/work" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6703452Z ^[[36;1m  -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6704293Z ^[[36;1m  "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6705066Z ^[[36;1m  --key /keys/signing.key.pem --out app.bundle.json^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6760532Z shell: /usr/bin/bash -e {0}
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6761044Z env:
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6761771Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6762595Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6763391Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6765042Z   KEY: ***
+c01 (ed25519, CI_KEY_ED25519)	Sign	2026-11-16T08:53:48.6765499Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Verify	﻿2026-11-16T08:53:49.0951531Z ##[group]Run docker run --rm --network none --user "$(id -u):$(id -g)" \
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.0952293Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.0953124Z ^[[36;1m  -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.0953736Z ^[[36;1m  "$IMAGE" verify --file app.tar.gz --bundle app.bundle.json \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.0954422Z ^[[36;1m  --trust-store /trust/trust.json --package "$PACKAGE" --version "$VERSION" \^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.0955013Z ^[[36;1m  --json > out/verify.json^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.0955430Z ^[[36;1mcat out/verify.json^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.1006715Z shell: /usr/bin/bash -e {0}
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.1007146Z env:
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.1007821Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.1008592Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.1008990Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.1009375Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.2549781Z OK: release verified
+c01 (ed25519, CI_KEY_ED25519)	Verify	2026-11-16T08:53:49.3059226Z {"valid":true,"status":"OK","message":"release verified","algorithm":"ed25519","keyid":"60c64a7cca9be9524c12cf1c1483e82b353917156c1990d319663f26238dddc9","package":"kelompok17-demo","version":"1.0.0"}
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	﻿2026-11-16T08:53:49.3167374Z ##[group]Run echo "deployed $PACKAGE $VERSION (ed25519)" > out/DEPLOYED
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3168134Z ^[[36;1mecho "deployed $PACKAGE $VERSION (ed25519)" > out/DEPLOYED^[[0m
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3219269Z shell: /usr/bin/bash -e {0}
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3219702Z env:
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3220374Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3221131Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3221535Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Deploy (simulated)	2026-11-16T08:53:49.3221904Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	﻿2026-11-16T08:53:49.3386205Z ##[group]Run actions/upload-artifact@v4
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3386687Z with:
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3387052Z   name: c01-ed25519
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3387435Z   path: out/
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	work/app.bundle.json
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3387862Z   if-no-files-found: warn
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3388234Z   compression-level: 6
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3388595Z   overwrite: false
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3388955Z   include-hidden-files: false
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3389321Z env:
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3390116Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3390814Z   PACKAGE: kelompok17-demo
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3391197Z   VERSION: 1.0.0
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.3391534Z ##[endgroup]
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5230019Z (node:2608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5232237Z (Use `node --trace-deprecation ...` to show where the warning was created)
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5327528Z Multiple search paths detected. Calculating the least common ancestor of all paths
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5330545Z The least common ancestor is /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17. This will be the root directory of the artifact
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5332266Z With the provided path, there will be 3 files uploaded
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5334124Z Artifact name is valid!
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.5334990Z Root directory input is valid!
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.9669603Z Beginning upload of artifact content to blob storage
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:49.9934358Z (node:2608) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.2877824Z Uploaded bytes 1045
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.3714131Z Finished uploading artifact content to blob storage!
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.3716110Z SHA256 digest of uploaded artifact zip is 1bddc8d860502da7d657ad4f8a69462d9ef9edee8d19f70d010511c7ddfdb854
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.3717477Z Finalizing artifact upload
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.7743318Z Artifact c01-ed25519.zip successfully finalized. Artifact ID 14209648975
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.7745870Z Artifact c01-ed25519 has been successfully uploaded! Final size is 1045 bytes. Artifact ID is 14209648975
+c01 (ed25519, CI_KEY_ED25519)	Upload evidence	2026-11-16T08:53:50.7751937Z Artifact download URL: https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43834964773/artifacts/14209648975
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	﻿2026-11-16T08:53:50.7998424Z Post job cleanup.
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.8958405Z [command]/usr/bin/git version
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9006373Z git version 2.56.1
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9048118Z Temporarily overriding HOME='/home/runner/work/_temp/c474c3f3-9459-48ec-bbef-c913e0c4f60c' before making global git config changes
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9051685Z Adding repository directory to the temporary git global config as a safe directory
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9053616Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9099576Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9155618Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9514341Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9534097Z http.https://github.com/.extraheader
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9556354Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9604791Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9943805Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+c01 (ed25519, CI_KEY_ED25519)	Post Checkout	2026-11-16T08:53:50.9984302Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+c01 (ed25519, CI_KEY_ED25519)	Complete job	﻿2026-11-16T08:53:51.0483412Z Cleaning up orphan processes
+c01 (ed25519, CI_KEY_ED25519)	Complete job	2026-11-16T08:53:51.0921728Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

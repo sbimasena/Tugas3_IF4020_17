@@ -1,0 +1,769 @@
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	﻿2026-11-16T08:54:49.1139972Z Current runner version: '2.338.2'
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1160334Z ##[group]Runner Image Provisioner
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1161042Z Hosted Compute Agent
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1161441Z Version: 20261103.629
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1161937Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1162467Z Build Date: 2026-11-03T17:26:59Z
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1162921Z Worker ID: {da47e2d7-6425-4ac2-a924-487028338956}
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1163483Z Region: southcentralus
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1163873Z Cloud: Azure
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1164335Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1165180Z ##[group]Operating System
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1165649Z Ubuntu
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1166001Z 26.04.1
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1166339Z LTS
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1166846Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1167215Z ##[group]Runner Image
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1167665Z Image: ubuntu-26.04
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1168041Z Version: 20261111.196.1
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1169376Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1170316Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1170990Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1171740Z ##[group]GITHUB_TOKEN Permissions
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1173277Z Contents: read
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1173644Z Metadata: read
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1174095Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1175585Z Secret source: Actions
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1176294Z Cache mode: write
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1176772Z Prepare workflow directory
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1457194Z Prepare all required actions
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1494845Z Getting action download info
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.3950579Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.5027504Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7182034Z Complete job name: scenario (c04, missing.tar.gz, /trust/trust.json)
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7765852Z ##[group]Run actions/checkout@v4
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7766327Z with:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7766607Z   repository: sbimasena/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7768717Z   token: ***
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7768974Z   ssh-strict: true
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7769498Z   ssh-user: git
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7769774Z   persist-credentials: true
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7770071Z   clean: true
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7770347Z   sparse-checkout-cone-mode: true
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7770698Z   fetch-depth: 1
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7770969Z   fetch-tags: false
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7771247Z   show-progress: true
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7771524Z   lfs: false
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7771778Z   submodules: false
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7772052Z   set-safe-directory: true
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7772367Z   allow-unsafe-pr-checkout: false
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7772768Z env:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7773251Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7773847Z   PACKAGE: kelompok17-demo
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7774153Z   VERSION: 1.0.0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7774420Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9722100Z Syncing repository: sbimasena/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9723841Z ##[group]Getting Git version info
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9724307Z Working directory is '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9725013Z [command]/usr/bin/git version
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9725488Z git version 2.56.1
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9733398Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9744302Z Temporarily overriding HOME='/home/runner/work/_temp/602105a2-f0c6-4f58-bd38-d134f3def7b4' before making global git config changes
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9745165Z Adding repository directory to the temporary git global config as a safe directory
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9749419Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9809684Z Deleting the contents of '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9812611Z ##[group]Initializing the repository
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9815304Z [command]/usr/bin/git init /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0027428Z hint: Using 'master' as the name for the initial branch. This default branch name
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0028549Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0029626Z hint: to use in all of your new repositories, which will suppress this warning,
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0030445Z hint: call:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0030888Z hint:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0031504Z hint: 	git config --global init.defaultBranch <name>
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0032310Z hint:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0032970Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0034007Z hint: 'development'. The just-created branch can be renamed via this command:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0034911Z hint:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0035403Z hint: 	git branch -m <name>
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0036080Z hint:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0036857Z hint: Disable this message with "git config set advice.defaultBranchName false"
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0038170Z Initialized empty Git repository in /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/.git/
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0052180Z [command]/usr/bin/git remote add origin https://github.com/sbimasena/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0143550Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0144579Z ##[group]Disabling automatic garbage collection
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0145072Z [command]/usr/bin/git config --local gc.auto 0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0181113Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0182059Z ##[group]Setting up auth
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0190095Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0235042Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0594646Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0622252Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0858721Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0890156Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1130260Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1167211Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1167814Z ##[group]Fetching the repository
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1174391Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0e846089847993266ec5e9a3e45187a70bfc3ade:refs/remotes/origin/main
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5107017Z From https://github.com/sbimasena/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5107838Z  * [new ref]         0e846089847993266ec5e9a3e45187a70bfc3ade -> origin/main
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5111054Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5111678Z ##[group]Determining the checkout info
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5113149Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5117112Z [command]/usr/bin/git sparse-checkout disable
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5157529Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5182365Z ##[group]Checking out the ref
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5190600Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5380186Z Switched to a new branch 'main'
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5383389Z branch 'main' set up to track 'origin/main'.
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5389189Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5427068Z [command]/usr/bin/git log -1 --format=%H
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5447301Z 0e846089847993266ec5e9a3e45187a70bfc3ade
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5622298Z ##[group]Run docker pull "$IMAGE"
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5622685Z ^[[36;1mdocker pull "$IMAGE"^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5664910Z shell: /usr/bin/bash -e {0}
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5665226Z env:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5665696Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5666233Z   PACKAGE: kelompok17-demo
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5666520Z   VERSION: 1.0.0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5666770Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.1573344Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540: Pulling from sbimasena/kelompok17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.6640650Z c85846afa1fb: Pulling fs layer
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.6641100Z abf21d361d3e: Pulling fs layer
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.6780705Z 44136fa355b3: Already exists
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.7776779Z 2975b0097aaa: Download complete
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.8845815Z abf21d361d3e: Download complete
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9678615Z c85846afa1fb: Download complete
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9685475Z abf21d361d3e: Pull complete
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9702455Z c85846afa1fb: Pull complete
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9703034Z Digest: sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9703967Z Status: Downloaded newer image for ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9711072Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9781674Z ##[group]Run mkdir -p work out
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9782172Z ^[[36;1mmkdir -p work out^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9782566Z ^[[36;1mtar czf work/app.tar.gz cmd internal go.mod go.sum^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9843926Z shell: /usr/bin/bash -e {0}
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9844328Z env:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9844798Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9845316Z   PACKAGE: kelompok17-demo
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9845658Z   VERSION: 1.0.0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9845928Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0027911Z ##[group]Run umask 077
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0028176Z ^[[36;1mumask 077^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0028416Z ^[[36;1mtrap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0028715Z ^[[36;1mprintf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0029288Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0029597Z ^[[36;1m  -v "$PWD/work:/work" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0029891Z ^[[36;1m  -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0030312Z ^[[36;1m  "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0030723Z ^[[36;1m  --key /keys/signing.key.pem --out app.bundle.json^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0075021Z shell: /usr/bin/bash -e {0}
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0075227Z env:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0075535Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0075923Z   PACKAGE: kelompok17-demo
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0076120Z   VERSION: 1.0.0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0076948Z   KEY: ***
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0077104Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7810841Z ##[group]Run set +e
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7811073Z ^[[36;1mset +e^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7811302Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7811586Z ^[[36;1m  -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7811875Z ^[[36;1m  "$IMAGE" verify --file "missing.tar.gz" --bundle app.bundle.json \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7812211Z ^[[36;1m  --trust-store "/trust/trust.json" --package "$PACKAGE" --version "$VERSION" \^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7812500Z ^[[36;1m  --json > out/verify.json^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7812680Z ^[[36;1mcode=$?^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7812847Z ^[[36;1mecho "$code" > out/exit_code^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7813058Z ^[[36;1mecho "code=$code" >> "$GITHUB_OUTPUT"^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7813273Z ^[[36;1mecho "verify exit code: $code"^[[0m
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7857545Z shell: /usr/bin/bash -e {0}
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7857743Z env:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7858084Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7858429Z   PACKAGE: kelompok17-demo
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7858622Z   VERSION: 1.0.0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7858795Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.8958897Z INPUT_ERROR: open missing.tar.gz: no such file or directory
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9404884Z verify exit code: 2
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9476422Z ##[group]Run actions/upload-artifact@v4
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9476646Z with:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9476794Z   name: c04
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9476939Z   path: out/
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9477101Z   if-no-files-found: warn
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9477275Z   compression-level: 6
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9477452Z   overwrite: false
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9477615Z   include-hidden-files: false
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9477787Z env:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9478072Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9478439Z   PACKAGE: kelompok17-demo
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9478639Z   VERSION: 1.0.0
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.9478791Z ##[endgroup]
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.0678734Z (node:2372) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.0679523Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.0724491Z With the provided path, there will be 2 files uploaded
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.0727501Z Artifact name is valid!
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.0728091Z Root directory input is valid!
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.3735006Z Beginning upload of artifact content to blob storage
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.3880849Z (node:2372) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.5568590Z Uploaded bytes 379
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.6019897Z Finished uploading artifact content to blob storage!
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.6020637Z SHA256 digest of uploaded artifact zip is b5f0a7ced7b93ad30f19beb6ebfecd616610cab21901cde147897f74ffed0caa
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.6021288Z Finalizing artifact upload
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9567317Z Artifact c04.zip successfully finalized. Artifact ID 14211025220
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9567896Z Artifact c04 has been successfully uploaded! Final size is 379 bytes. Artifact ID is 14211025220
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9568456Z Artifact download URL: https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43835113500/artifacts/14211025220
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9749613Z Post job cleanup.
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0350349Z [command]/usr/bin/git version
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0387562Z git version 2.56.1
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0437854Z Temporarily overriding HOME='/home/runner/work/_temp/56a42e0f-54c2-483f-b7b4-df48b9b06eca' before making global git config changes
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0438853Z Adding repository directory to the temporary git global config as a safe directory
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0439840Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0471232Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0520643Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0811058Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0846183Z http.https://github.com/.extraheader
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0866977Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0900243Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1164164Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1197811Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1566562Z Cleaning up orphan processes
+scenario (c04, missing.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1876453Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	﻿2026-11-16T08:54:49.6650910Z Current runner version: '2.338.2'
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6675877Z ##[group]Runner Image Provisioner
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6676743Z Hosted Compute Agent
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6677359Z Version: 20261103.629
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6678010Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6678719Z Build Date: 2026-11-03T17:26:59Z
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6679438Z Worker ID: {b4485c98-6268-4634-822c-2f142976f349}
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6680102Z Region: westus3
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6680694Z Cloud: Azure
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6681235Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6682771Z ##[group]Operating System
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6683393Z Ubuntu
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6683905Z 26.04.1
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6684566Z LTS
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6685158Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6686087Z ##[group]Runner Image
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6686682Z Image: ubuntu-26.04
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6687564Z Version: 20261111.196.1
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6688921Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6690344Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6691235Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6692395Z ##[group]GITHUB_TOKEN Permissions
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6694733Z Contents: read
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6695510Z Metadata: read
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6696086Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6698300Z Secret source: Actions
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6699260Z Cache mode: write
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6699941Z Prepare workflow directory
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7099030Z Prepare all required actions
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7149257Z Getting action download info
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0106309Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1052746Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.2572451Z Complete job name: scenario (c02, app.tar.gz, /trust/trust.json)
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3520369Z ##[group]Run actions/checkout@v4
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3521212Z with:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3521673Z   repository: sbimasena/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3525662Z   token: ***
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3526080Z   ssh-strict: true
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3526499Z   ssh-user: git
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3526940Z   persist-credentials: true
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3527401Z   clean: true
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3527842Z   sparse-checkout-cone-mode: true
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3528338Z   fetch-depth: 1
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3528745Z   fetch-tags: false
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3529171Z   show-progress: true
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3529585Z   lfs: false
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3529981Z   submodules: false
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3530401Z   set-safe-directory: true
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3530879Z   allow-unsafe-pr-checkout: false
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3531704Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3532462Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3533413Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3533884Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3534287Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5984092Z Syncing repository: sbimasena/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5986331Z ##[group]Getting Git version info
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5987518Z Working directory is '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5988802Z [command]/usr/bin/git version
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.5989340Z git version 2.56.1
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6012746Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6038481Z Temporarily overriding HOME='/home/runner/work/_temp/4faeef23-0e08-43df-bb18-40d697068c5c' before making global git config changes
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6040948Z Adding repository directory to the temporary git global config as a safe directory
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6043164Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6102356Z Deleting the contents of '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6110619Z ##[group]Initializing the repository
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6114680Z [command]/usr/bin/git init /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6230688Z hint: Using 'master' as the name for the initial branch. This default branch name
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6232780Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6234704Z hint: to use in all of your new repositories, which will suppress this warning,
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6236348Z hint: call:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6237229Z hint:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6238317Z hint: 	git config --global init.defaultBranch <name>
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6239568Z hint:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6240759Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6242597Z hint: 'development'. The just-created branch can be renamed via this command:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6244105Z hint:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6245021Z hint: 	git branch -m <name>
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6246248Z hint:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6247568Z hint: Disable this message with "git config set advice.defaultBranchName false"
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6251098Z Initialized empty Git repository in /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/.git/
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6254892Z [command]/usr/bin/git remote add origin https://github.com/sbimasena/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6298025Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6299367Z ##[group]Disabling automatic garbage collection
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6302276Z [command]/usr/bin/git config --local gc.auto 0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6339114Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6367115Z ##[group]Setting up auth
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6396659Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6401356Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6771977Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6803613Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.7051428Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.7081206Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.7319871Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.7362426Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.7363233Z ##[group]Fetching the repository
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.7378501Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0e846089847993266ec5e9a3e45187a70bfc3ade:refs/remotes/origin/main
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2582682Z From https://github.com/sbimasena/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2583675Z  * [new ref]         0e846089847993266ec5e9a3e45187a70bfc3ade -> origin/main
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2586811Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2594393Z ##[group]Determining the checkout info
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2596372Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2602711Z [command]/usr/bin/git sparse-checkout disable
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2643924Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2670167Z ##[group]Checking out the ref
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2674576Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2846451Z Switched to a new branch 'main'
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2850846Z branch 'main' set up to track 'origin/main'.
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2854416Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2896912Z [command]/usr/bin/git log -1 --format=%H
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.2918173Z 0e846089847993266ec5e9a3e45187a70bfc3ade
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3128869Z ##[group]Run docker pull "$IMAGE"
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3129608Z ^[[36;1mdocker pull "$IMAGE"^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3163618Z shell: /usr/bin/bash -e {0}
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3164216Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3165038Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3166262Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3166751Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3167194Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0666545Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540: Pulling from sbimasena/kelompok17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.7297585Z c85846afa1fb: Pulling fs layer
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.7298524Z abf21d361d3e: Pulling fs layer
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.8070370Z 44136fa355b3: Already exists
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.9071044Z 2975b0097aaa: Download complete
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0064352Z c85846afa1fb: Download complete
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0069991Z abf21d361d3e: Download complete
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0087493Z c85846afa1fb: Pull complete
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0097357Z abf21d361d3e: Pull complete
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0109203Z Digest: sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0113205Z Status: Downloaded newer image for ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0123492Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0209745Z ##[group]Run mkdir -p work out
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0210333Z ^[[36;1mmkdir -p work out^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0210774Z ^[[36;1mtar czf work/app.tar.gz cmd internal go.mod go.sum^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0257798Z shell: /usr/bin/bash -e {0}
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0258316Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0258912Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0259827Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0260327Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0260749Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0463397Z ##[group]Run umask 077
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0463740Z ^[[36;1mumask 077^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0464101Z ^[[36;1mtrap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0464556Z ^[[36;1mprintf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0465038Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0465741Z ^[[36;1m  -v "$PWD/work:/work" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0466154Z ^[[36;1m  -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0466708Z ^[[36;1m  "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0467225Z ^[[36;1m  --key /keys/signing.key.pem --out app.bundle.json^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0499570Z shell: /usr/bin/bash -e {0}
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0499902Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0500411Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0501048Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0501346Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0502434Z   KEY: ***
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.0502690Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3648772Z ##[group]Run # Flip one byte in place; size and name stay the same.
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3649345Z ^[[36;1m# Flip one byte in place; size and name stay the same.^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3649850Z ^[[36;1mbyte=$(dd if=work/app.tar.gz bs=1 skip=100 count=1 2>/dev/null | od -An -tu1 | tr -d ' ')^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3650453Z ^[[36;1mprintf "\\$(printf '%03o' $(( byte ^ 1 )))" | dd of=work/app.tar.gz bs=1 seek=100 conv=notrunc 2>/dev/null^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3650916Z ^[[36;1mls -l work/app.tar.gz^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3679682Z shell: /usr/bin/bash -e {0}
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3679983Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3680452Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3680962Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3681411Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3681635Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3827107Z -rw-r--r-- 1 runner runner 22672 Nov 16 08:54 work/app.tar.gz
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3884760Z ##[group]Run set +e
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3885034Z ^[[36;1mset +e^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3885667Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3886090Z ^[[36;1m  -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3886536Z ^[[36;1m  "$IMAGE" verify --file "app.tar.gz" --bundle app.bundle.json \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3887048Z ^[[36;1m  --trust-store "/trust/trust.json" --package "$PACKAGE" --version "$VERSION" \^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3887481Z ^[[36;1m  --json > out/verify.json^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3887739Z ^[[36;1mcode=$?^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3887965Z ^[[36;1mecho "$code" > out/exit_code^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3888260Z ^[[36;1mecho "code=$code" >> "$GITHUB_OUTPUT"^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3888564Z ^[[36;1mecho "verify exit code: $code"^[[0m
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3917350Z shell: /usr/bin/bash -e {0}
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3917638Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3918142Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3918662Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3918905Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.3919120Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5149501Z ARTIFACT_MISMATCH: artifact size or digest differs
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5475912Z verify exit code: 1
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5574140Z ##[group]Run actions/upload-artifact@v4
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5574474Z with:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5574684Z   name: c02
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5574895Z   path: out/
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5575139Z   if-no-files-found: warn
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5575640Z   compression-level: 6
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5575887Z   overwrite: false
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5576127Z   include-hidden-files: false
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5576375Z env:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5576825Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5577349Z   PACKAGE: kelompok17-demo
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5577597Z   VERSION: 1.0.0
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.5577813Z ##[endgroup]
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7307063Z (node:2610) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7308367Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7456950Z With the provided path, there will be 2 files uploaded
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7467359Z Artifact name is valid!
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:53.7468102Z Root directory input is valid!
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.0969284Z Beginning upload of artifact content to blob storage
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.1196180Z (node:2610) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.3402589Z Uploaded bytes 444
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.4074324Z Finished uploading artifact content to blob storage!
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.4075478Z SHA256 digest of uploaded artifact zip is cc3e34eec39ce33508ebf3c37ee4a2f6593b332cebd4267d1860c5bd15abef90
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.4077443Z Finalizing artifact upload
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9317403Z Artifact c02.zip successfully finalized. Artifact ID 14210272994
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9318362Z Artifact c02 has been successfully uploaded! Final size is 444 bytes. Artifact ID is 14210272994
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9319268Z Artifact download URL: https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43835113500/artifacts/14210272994
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:54.9609078Z Post job cleanup.
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0451123Z [command]/usr/bin/git version
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0498631Z git version 2.56.1
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0544760Z Temporarily overriding HOME='/home/runner/work/_temp/4455b288-bd50-4489-9b06-f2608b5af936' before making global git config changes
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0545816Z Adding repository directory to the temporary git global config as a safe directory
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0551843Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0598376Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0636065Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0898011Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0922913Z http.https://github.com/.extraheader
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0934907Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.0967695Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1221274Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1267828Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1658263Z Cleaning up orphan processes
+scenario (c02, app.tar.gz, /trust/trust.json)	UNKNOWN STEP	2026-11-16T08:54:55.1981668Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	﻿2026-11-16T08:54:49.1710441Z Current runner version: '2.338.2'
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1742352Z ##[group]Runner Image Provisioner
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1743458Z Hosted Compute Agent
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1744262Z Version: 20261103.629
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1745165Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1746134Z Build Date: 2026-11-03T17:26:59Z
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1747259Z Worker ID: {05dc4f92-6255-449d-8d2b-63c983c52a1f}
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1748307Z Region: eastus
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1749104Z Cloud: Azure
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1749846Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1751879Z ##[group]Operating System
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1753193Z Ubuntu
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1753886Z 26.04.1
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1754638Z LTS
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1755317Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1756150Z ##[group]Runner Image
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1757156Z Image: ubuntu-26.04
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1757705Z Version: 20261111.196.1
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1758914Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1760300Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1761182Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1762203Z ##[group]GITHUB_TOKEN Permissions
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1764217Z Contents: read
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1764800Z Metadata: read
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1765365Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1767567Z Secret source: Actions
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1768521Z Cache mode: write
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.1769357Z Prepare workflow directory
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.2086306Z Prepare all required actions
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.2127960Z Getting action download info
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.3750811Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.4824186Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.6561163Z Complete job name: scenario (c03, app.tar.gz, /work/empty-trust.json)
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7306324Z ##[group]Run actions/checkout@v4
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7307202Z with:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7307613Z   repository: sbimasena/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7310735Z   token: ***
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7311127Z   ssh-strict: true
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7311516Z   ssh-user: git
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7312003Z   persist-credentials: true
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7312425Z   clean: true
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7312826Z   sparse-checkout-cone-mode: true
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7313276Z   fetch-depth: 1
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7313666Z   fetch-tags: false
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7314054Z   show-progress: true
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7314442Z   lfs: false
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7314810Z   submodules: false
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7315194Z   set-safe-directory: true
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7315632Z   allow-unsafe-pr-checkout: false
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7316282Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7317088Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7317935Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7318363Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.7318735Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9775193Z Syncing repository: sbimasena/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9777780Z ##[group]Getting Git version info
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9778755Z Working directory is '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9779790Z [command]/usr/bin/git version
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9785788Z git version 2.56.1
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9808226Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9820227Z Temporarily overriding HOME='/home/runner/work/_temp/717727e7-3bbe-42c0-9588-344d19f85496' before making global git config changes
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9822567Z Adding repository directory to the temporary git global config as a safe directory
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9825894Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9889392Z Deleting the contents of '/home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17'
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9891637Z ##[group]Initializing the repository
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:49.9894844Z [command]/usr/bin/git init /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0003110Z hint: Using 'master' as the name for the initial branch. This default branch name
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0005224Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0006901Z hint: to use in all of your new repositories, which will suppress this warning,
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0008182Z hint: call:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0008846Z hint:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0009651Z hint: 	git config --global init.defaultBranch <name>
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0010591Z hint:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0011541Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0012985Z hint: 'development'. The just-created branch can be renamed via this command:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0014248Z hint:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0014969Z hint: 	git branch -m <name>
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0015833Z hint:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0017084Z hint: Disable this message with "git config set advice.defaultBranchName false"
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0018792Z Initialized empty Git repository in /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/.git/
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0023448Z [command]/usr/bin/git remote add origin https://github.com/sbimasena/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0076973Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0078149Z ##[group]Disabling automatic garbage collection
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0080331Z [command]/usr/bin/git config --local gc.auto 0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0112805Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0113912Z ##[group]Setting up auth
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0118515Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0151334Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0561726Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0595340Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0843117Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.0878501Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1122297Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1159338Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1166489Z ##[group]Fetching the repository
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.1168311Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0e846089847993266ec5e9a3e45187a70bfc3ade:refs/remotes/origin/main
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3351204Z From https://github.com/sbimasena/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3352666Z  * [new ref]         0e846089847993266ec5e9a3e45187a70bfc3ade -> origin/main
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3355661Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3357022Z ##[group]Determining the checkout info
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3358440Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3364495Z [command]/usr/bin/git sparse-checkout disable
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3419742Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3452423Z ##[group]Checking out the ref
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3466994Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3700138Z Switched to a new branch 'main'
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3706222Z branch 'main' set up to track 'origin/main'.
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3713843Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3761112Z [command]/usr/bin/git log -1 --format=%H
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3783914Z 0e846089847993266ec5e9a3e45187a70bfc3ade
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3991714Z ##[group]Run docker pull "$IMAGE"
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.3992279Z ^[[36;1mdocker pull "$IMAGE"^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.4041855Z shell: /usr/bin/bash -e {0}
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.4042337Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.4043056Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.4043862Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.4044288Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.4044669Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.6517973Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540: Pulling from sbimasena/kelompok17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.8549589Z abf21d361d3e: Pulling fs layer
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.8551618Z c85846afa1fb: Pulling fs layer
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9086299Z 2975b0097aaa: Download complete
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9088642Z 44136fa355b3: Already exists
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9745091Z abf21d361d3e: Download complete
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9747114Z c85846afa1fb: Download complete
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9755778Z abf21d361d3e: Pull complete
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9771665Z c85846afa1fb: Pull complete
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9773323Z Digest: sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9777161Z Status: Downloaded newer image for ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9785739Z ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9998336Z ##[group]Run mkdir -p work out
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:50.9999480Z ^[[36;1mmkdir -p work out^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0000669Z ^[[36;1mtar czf work/app.tar.gz cmd internal go.mod go.sum^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0048095Z shell: /usr/bin/bash -e {0}
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0049097Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0050756Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0052688Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0053650Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0054550Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0279191Z ##[group]Run umask 077
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0280173Z ^[[36;1mumask 077^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0281203Z ^[[36;1mtrap 'rm -f "$RUNNER_TEMP/signing.key.pem"' EXIT^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0282607Z ^[[36;1mprintf '%s\n' "$KEY" > "$RUNNER_TEMP/signing.key.pem"^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0284111Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0285458Z ^[[36;1m  -v "$PWD/work:/work" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0286914Z ^[[36;1m  -v "$RUNNER_TEMP/signing.key.pem:/keys/signing.key.pem:ro" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0288700Z ^[[36;1m  "$IMAGE" sign --file app.tar.gz --package "$PACKAGE" --version "$VERSION" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0290405Z ^[[36;1m  --key /keys/signing.key.pem --out app.bundle.json^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0337889Z shell: /usr/bin/bash -e {0}
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0338815Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0340398Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0342359Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0343281Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0345658Z   KEY: ***
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.0346444Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3831920Z ##[group]Run echo '{"schema":"minisign-trust/v1","keys":[]}' > work/empty-trust.json
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3833816Z ^[[36;1mecho '{"schema":"minisign-trust/v1","keys":[]}' > work/empty-trust.json^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3885936Z shell: /usr/bin/bash -e {0}
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3887030Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3888574Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3890408Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3891377Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.3892442Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4053947Z ##[group]Run set +e
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4054814Z ^[[36;1mset +e^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4055903Z ^[[36;1mdocker run --rm --network none --user "$(id -u):$(id -g)" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4057760Z ^[[36;1m  -v "$PWD/work:/work" -v "$PWD/ci:/trust:ro" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4059233Z ^[[36;1m  "$IMAGE" verify --file "app.tar.gz" --bundle app.bundle.json \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4061062Z ^[[36;1m  --trust-store "/work/empty-trust.json" --package "$PACKAGE" --version "$VERSION" \^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4062677Z ^[[36;1m  --json > out/verify.json^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4063664Z ^[[36;1mcode=$?^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4064496Z ^[[36;1mecho "$code" > out/exit_code^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4065583Z ^[[36;1mecho "code=$code" >> "$GITHUB_OUTPUT"^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4066835Z ^[[36;1mecho "verify exit code: $code"^[[0m
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4114442Z shell: /usr/bin/bash -e {0}
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4115361Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4117062Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4118852Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4119748Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.4120535Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5379158Z KEY_NOT_TRUSTED: keyid not present in trust store
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5769583Z verify exit code: 1
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5927562Z ##[group]Run actions/upload-artifact@v4
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5928611Z with:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5929375Z   name: c03
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5930158Z   path: out/
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5930945Z   if-no-files-found: warn
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5931823Z   compression-level: 6
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5932664Z   overwrite: false
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5933485Z   include-hidden-files: false
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5934363Z env:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5935802Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5937757Z   PACKAGE: kelompok17-demo
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5938643Z   VERSION: 1.0.0
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.5939419Z ##[endgroup]
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.7361272Z (node:2385) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.7364664Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.7424525Z With the provided path, there will be 2 files uploaded
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.7427194Z Artifact name is valid!
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.7428518Z Root directory input is valid!
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9582138Z Beginning upload of artifact content to blob storage
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:51.9790000Z (node:2385) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0053181Z Uploaded bytes 442
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0277322Z Finished uploading artifact content to blob storage!
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0278365Z SHA256 digest of uploaded artifact zip is ef6f9f2216ecbd94b360973ae01417500ec9ba672b8fd640320a1030ab954c0c
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.0279236Z Finalizing artifact upload
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.3564788Z Artifact c03.zip successfully finalized. Artifact ID 14210257401
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.3565746Z Artifact c03 has been successfully uploaded! Final size is 442 bytes. Artifact ID is 14210257401
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.3572229Z Artifact download URL: https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43835113500/artifacts/14210257401
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.3796886Z Post job cleanup.
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4555224Z [command]/usr/bin/git version
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4597901Z git version 2.56.1
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4633425Z Temporarily overriding HOME='/home/runner/work/_temp/96518880-ea8a-41a3-900e-852ecb6835fc' before making global git config changes
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4634626Z Adding repository directory to the temporary git global config as a safe directory
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4637204Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4678574Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.4720613Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5012497Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5040840Z http.https://github.com/.extraheader
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5052593Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5094014Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5372343Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5405002Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.5814164Z Cleaning up orphan processes
+scenario (c03, app.tar.gz, /work/empty-trust.json)	UNKNOWN STEP	2026-11-16T08:54:52.6163398Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+check	Set up job	﻿2026-11-16T08:54:59.2371664Z Current runner version: '2.338.2'
+check	Set up job	2026-11-16T08:54:59.2392080Z ##[group]Runner Image Provisioner
+check	Set up job	2026-11-16T08:54:59.2392629Z Hosted Compute Agent
+check	Set up job	2026-11-16T08:54:59.2393084Z Version: 20261103.629
+check	Set up job	2026-11-16T08:54:59.2393468Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+check	Set up job	2026-11-16T08:54:59.2393969Z Build Date: 2026-11-03T17:26:59Z
+check	Set up job	2026-11-16T08:54:59.2394391Z Worker ID: {477d276f-da57-45f4-ae36-452aab860f12}
+check	Set up job	2026-11-16T08:54:59.2394812Z Region: eastus2
+check	Set up job	2026-11-16T08:54:59.2395183Z Cloud: Azure
+check	Set up job	2026-11-16T08:54:59.2395512Z ##[endgroup]
+check	Set up job	2026-11-16T08:54:59.2396283Z ##[group]Operating System
+check	Set up job	2026-11-16T08:54:59.2396694Z Ubuntu
+check	Set up job	2026-11-16T08:54:59.2397010Z 26.04.1
+check	Set up job	2026-11-16T08:54:59.2397392Z LTS
+check	Set up job	2026-11-16T08:54:59.2397707Z ##[endgroup]
+check	Set up job	2026-11-16T08:54:59.2398059Z ##[group]Runner Image
+check	Set up job	2026-11-16T08:54:59.2398462Z Image: ubuntu-26.04
+check	Set up job	2026-11-16T08:54:59.2398810Z Version: 20261111.196.1
+check	Set up job	2026-11-16T08:54:59.2399448Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+check	Set up job	2026-11-16T08:54:59.2400485Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+check	Set up job	2026-11-16T08:54:59.2401364Z ##[endgroup]
+check	Set up job	2026-11-16T08:54:59.2402019Z ##[group]GITHUB_TOKEN Permissions
+check	Set up job	2026-11-16T08:54:59.2403268Z Contents: read
+check	Set up job	2026-11-16T08:54:59.2403647Z Metadata: read
+check	Set up job	2026-11-16T08:54:59.2404026Z ##[endgroup]
+check	Set up job	2026-11-16T08:54:59.2405663Z Secret source: Actions
+check	Set up job	2026-11-16T08:54:59.2406267Z Cache mode: write
+check	Set up job	2026-11-16T08:54:59.2406872Z Prepare workflow directory
+check	Set up job	2026-11-16T08:54:59.2695589Z Prepare all required actions
+check	Set up job	2026-11-16T08:54:59.2739205Z Getting action download info
+check	Set up job	2026-11-16T08:54:59.4263434Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+check	Set up job	2026-11-16T08:54:59.7323982Z Complete job name: check
+check	Download evidence	﻿2026-11-16T08:54:59.7891095Z ##[group]Run actions/download-artifact@v4
+check	Download evidence	2026-11-16T08:54:59.7891594Z with:
+check	Download evidence	2026-11-16T08:54:59.7891843Z   merge-multiple: false
+check	Download evidence	2026-11-16T08:54:59.7892146Z   repository: sbimasena/Tugas3_IF4020_17
+check	Download evidence	2026-11-16T08:54:59.7892459Z   run-id: 43835113500
+check	Download evidence	2026-11-16T08:54:59.7892760Z env:
+check	Download evidence	2026-11-16T08:54:59.7893261Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+check	Download evidence	2026-11-16T08:54:59.7893809Z   PACKAGE: kelompok17-demo
+check	Download evidence	2026-11-16T08:54:59.7894088Z   VERSION: 1.0.0
+check	Download evidence	2026-11-16T08:54:59.7894333Z ##[endgroup]
+check	Download evidence	2026-11-16T08:55:00.0106163Z (node:2082) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+check	Download evidence	2026-11-16T08:55:00.0107155Z (Use `node --trace-deprecation ...` to show where the warning was created)
+check	Download evidence	2026-11-16T08:55:00.0815127Z Found 3 artifact(s)
+check	Download evidence	2026-11-16T08:55:00.0816853Z No input name, artifact-ids or pattern filtered specified, downloading all artifacts
+check	Download evidence	2026-11-16T08:55:00.0818207Z An extra directory with the artifact name will be created for each download
+check	Download evidence	2026-11-16T08:55:00.0819389Z Preparing to download the following artifacts:
+check	Download evidence	2026-11-16T08:55:00.0828166Z - c04 (ID: 14211025220, Size: 379, Expected Digest: sha256:b5f0a7ced7b93ad30f19beb6ebfecd616610cab21901cde147897f74ffed0caa)
+check	Download evidence	2026-11-16T08:55:00.0832681Z - c02 (ID: 14210272994, Size: 444, Expected Digest: sha256:cc3e34eec39ce33508ebf3c37ee4a2f6593b332cebd4267d1860c5bd15abef90)
+check	Download evidence	2026-11-16T08:55:00.0834665Z - c03 (ID: 14210257401, Size: 442, Expected Digest: sha256:ef6f9f2216ecbd94b360973ae01417500ec9ba672b8fd640320a1030ab954c0c)
+check	Download evidence	2026-11-16T08:55:00.1967671Z Redirecting to blob download url: https://productionresultssa4.blob.core.windows.net/actions-results/a69a59dc-a99f-4a65-bab9-73db01677a34/workflow-job-run-7f24d9e9-379f-53b8-af79-4f1ee10e9f98/artifacts/ff62523e04ae48ba33a86ec74ed9bfbc3859a73bf2cf8bf68b233964c801f16d.zip
+check	Download evidence	2026-11-16T08:55:00.1969148Z Starting download of artifact to: /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/c04
+check	Download evidence	2026-11-16T08:55:00.2240194Z Redirecting to blob download url: https://productionresultssa4.blob.core.windows.net/actions-results/a69a59dc-a99f-4a65-bab9-73db01677a34/workflow-job-run-270fbaf3-85b4-5b06-a4e5-dc78332a4bd8/artifacts/31b1608f191b90c385198e93cf4626aa916a6acd0849ea44e32205efe33d4967.zip
+check	Download evidence	2026-11-16T08:55:00.2242040Z Starting download of artifact to: /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/c02
+check	Download evidence	2026-11-16T08:55:00.2437331Z (node:2082) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+check	Download evidence	2026-11-16T08:55:00.2464857Z SHA256 digest of downloaded artifact is b5f0a7ced7b93ad30f19beb6ebfecd616610cab21901cde147897f74ffed0caa
+check	Download evidence	2026-11-16T08:55:00.2465564Z Artifact download completed successfully.
+check	Download evidence	2026-11-16T08:55:00.2481446Z Redirecting to blob download url: https://productionresultssa4.blob.core.windows.net/actions-results/a69a59dc-a99f-4a65-bab9-73db01677a34/workflow-job-run-4d892117-8717-505e-847d-9efec7cd1d4b/artifacts/ba6fe79562bdf03f714bf6bd3890783670625918482cef77d604218714bf92c5.zip
+check	Download evidence	2026-11-16T08:55:00.2482948Z Starting download of artifact to: /home/runner/work/Tugas3_IF4020_17/Tugas3_IF4020_17/c03
+check	Download evidence	2026-11-16T08:55:00.2634911Z SHA256 digest of downloaded artifact is ef6f9f2216ecbd94b360973ae01417500ec9ba672b8fd640320a1030ab954c0c
+check	Download evidence	2026-11-16T08:55:00.2635611Z Artifact download completed successfully.
+check	Download evidence	2026-11-16T08:55:00.2678092Z SHA256 digest of downloaded artifact is cc3e34eec39ce33508ebf3c37ee4a2f6593b332cebd4267d1860c5bd15abef90
+check	Download evidence	2026-11-16T08:55:00.2679215Z Artifact download completed successfully.
+check	Download evidence	2026-11-16T08:55:00.2679852Z Total of 3 artifact(s) downloaded
+check	Download evidence	2026-11-16T08:55:00.2682217Z Download artifact has finished successfully
+check	Assert exit codes, statuses and missing deploy markers	﻿2026-11-16T08:55:00.2873139Z ##[group]Run set -eu
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2873549Z ^[[36;1mset -eu^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2873871Z ^[[36;1mtest "$RESULT" = success^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2874413Z ^[[36;1mfor row in c02:ARTIFACT_MISMATCH:1 c03:KEY_NOT_TRUSTED:1 c04:INPUT_ERROR:2; do^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2874972Z ^[[36;1m  IFS=: read -r id want want_code <<< "$row"^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2875421Z ^[[36;1m  got_code=$(cat "$id/exit_code")^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2875861Z ^[[36;1m  echo "$id: exit=$got_code (want $want_code)"^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2876286Z ^[[36;1m  test "$got_code" = "$want_code"^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2876692Z ^[[36;1m  got=$(jq -r .status "$id/verify.json")^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2877109Z ^[[36;1m  echo "$id: status=$got (want $want)"^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2877494Z ^[[36;1m  test "$got" = "$want"^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2877962Z ^[[36;1m  if [ -e "$id/DEPLOYED" ]; then echo "$id: deploy marker exists"; exit 1; fi^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2878456Z ^[[36;1m  echo "$id: no deploy marker"^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2878818Z ^[[36;1mdone^[[0m
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2924750Z shell: /usr/bin/bash -e {0}
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2925114Z env:
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2925646Z   IMAGE: ghcr.io/sbimasena/kelompok17@sha256:6e21166b88b7dd7e3d892a7a3646f560658f40fcd05ce126f7ee415770d27540
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2926256Z   PACKAGE: kelompok17-demo
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2926585Z   VERSION: 1.0.0
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2926882Z   RESULT: success
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.2927259Z ##[endgroup]
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3030795Z c02: exit=1 (want 1)
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3052318Z c02: status=ARTIFACT_MISMATCH (want ARTIFACT_MISMATCH)
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3052951Z c02: no deploy marker
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3076065Z c03: exit=1 (want 1)
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3096394Z c03: status=KEY_NOT_TRUSTED (want KEY_NOT_TRUSTED)
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3097130Z c03: no deploy marker
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3121046Z c04: exit=2 (want 2)
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3141506Z c04: status=INPUT_ERROR (want INPUT_ERROR)
+check	Assert exit codes, statuses and missing deploy markers	2026-11-16T08:55:00.3141948Z c04: no deploy marker
+check	Complete job	﻿2026-11-16T08:55:00.3202173Z Cleaning up orphan processes
+check	Complete job	2026-11-16T08:55:00.3471056Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/download-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

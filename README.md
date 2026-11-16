@@ -50,6 +50,15 @@ docker run --rm --network none --user "$(id -u):$(id -g)" -v "$PWD:/work" \
 
 `scenarios.yml` menjalankan skenario gagal C02 sampai C04 lalu memeriksa status, exit code, dan tidak adanya penanda deploy.
 
+Bukti run dengan image `1.0.0` (`sha256:6e21166b…27540`):
+
+| Workflow | Run | Hasil | Salinan artefak dan log |
+|---|---|---|---|
+| `pipeline` (C01) | [#43834964773](https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43834964773) | ketiga algoritma `OK`, penanda `DEPLOYED` ada | [`test/ci/pipeline/`](test/ci/pipeline/) |
+| `scenarios` (C02–C04) | [#43835113500](https://github.com/sbimasena/Tugas3_IF4020_17/actions/runs/43835113500) | C02 `ARTIFACT_MISMATCH` exit 1, C03 `KEY_NOT_TRUSTED` exit 1, C04 `INPUT_ERROR` exit 2, tanpa penanda `DEPLOYED` | [`test/ci/scenarios/`](test/ci/scenarios/) |
+
+Setiap folder berisi `verify.json`, `exit_code` (khusus scenarios), `DEPLOYED` (khusus pipeline), bundle, dan `log.txt` hasil `gh run view --log`. Secret di log sudah disamarkan GitHub menjadi `***`.
+
 ### Build image sendiri
 
 ```sh
@@ -188,6 +197,7 @@ Manifest SBOM (schema `minisign-sbom-manifest/v1`) dikemas di bundle biasa (`min
 | Skenario U01 sampai U14, CLI, trust store | `python test/scenarios/run_app.py` | `test/results/app-<waktu>/` |
 | SBOM S01 sampai S05 (butuh Docker dan Python 3) | `bash test/scenarios/run_sbom.sh` | `test/results/sbom/log.txt` |
 | Benchmark | `go build -o bench/k17 ./cmd/kelompok17` lalu `go run ./bench` | `bench/results/` |
+| CI/CD C01 sampai C04 | push ke `main` (pipeline), Actions → scenarios → Run workflow | `test/ci/` |
 
 
 ## Dokumentasi API
